@@ -69,6 +69,7 @@ nav h3{
     background: black;
     display: none;
     justify-content: center;
+    flex-direction: column;
 }
 
 #mobileNav a {
@@ -78,7 +79,7 @@ nav h3{
 
 #mobileNav h2 {
     margin: 0;
-    padding: 1.5em;
+    padding: 1em;
 }
 
 h1{
@@ -106,7 +107,7 @@ a {
 .landingImages {
     height: 50vh;
     background-attachment: fixed;
-    background-position: center;
+    background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 1em;
@@ -119,6 +120,7 @@ a {
 #land1 {
     background-image: url("../images/landing/COVER_Building_Shot.jpg");
     height: 100vh;
+    background-position: center;
 }
 #land2 {
     background-image: url("../images/landing/COVER_ChampionSketches.jpg");
