@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');
+
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 16px;
+    color: black;
+}
+
+nav{
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    width: 100vw;
+    flex-direction: row;
+}
+
+.navButton {
+    transition: color .2s;
+    width: 4em;
+    text-align: center;
+}
+
+.dropBtn {
+    display: none;
+}
+
+#contactBtn{
+    transition: color .2s;
+}
+
+#navPad{
+    padding: 1em;
+}
+
+nav h3{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding-bottom: 1em;
+}
+
+#navPad a{
+    color: white;
+    text-decoration: none;
+    border: thin;
+    border-style: solid;
+    padding: .5em;
+}
+
+#hamburger {
+    margin: 1em;
+    cursor: pointer;
+    display: none;
+    z-index: 100;
+}
+
+.bar{
+    width: 3em;
+    height: .5em;
+    background-color: white;
+    margin: .5em 0;
+    transition: 0.4s;
+}
+
+#mobileNav{
+    position: absolute;
+    width: 100vw;
+    text-align: center;
+    background: black;
+    display: none;
+    justify-content: center;
+}
+
+#mobileNav a {
+    color: white;
+    text-decoration: none;
+}
+
+#mobileNav h2 {
+    margin: 0;
+    padding: 1.5em;
+}
+
+h1{
+    text-align: center;
+    margin: 0;
+    padding: 1em;
+}
+
+p {
+    line-height: 1.5em;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    line-height: 1.5em;
+}
+
+a {
+    outline: 0;
+}
+
+.landingImages {
+    height: 50vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1em;
+}
+
+.landingImages h3 {
+    color: white;
+}
+
+#land1 {
+    background-image: url("../images/landing/COVER_Building_Shot.jpg");
+    height: 100vh;
+}
+#land2 {
+    background-image: url("../images/landing/COVER_ChampionSketches.jpg");
+}
+#land3 {
+    background-image: url("../images/landing/COVER_CommunityCoffee.jpg");
+}
+#land4 {
+    background-image: url("../images/landing/COVER_InsideTheStudio.jpg");
+}
+#land5 {
+    background-image: url("../images/landing/Cover_Three_Amigos.jpg");
+}
+
+#land1 img {
+    width: 25%;
+}
+
+#about {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.paragraph {
+    max-width: 30em;
+    padding: 1em;
+}
+
+#capable {
+    display: flex;
+    justify-content: center;
+}
+
+#capList {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 30em;
+}
+
+#capList ul {
+    padding-bottom: 1em;
+    margin: 0;
+}
+
+#map {
+    padding: 1em;
+}
+
+main{
+    height: 100vh;
+}
+
+@media screen and (max-width: 1024px){
+    #navPad {
+        display: none;
+    }
+    #hamburger{
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    #mobileNav{
+        display: none;
+    }
+}
