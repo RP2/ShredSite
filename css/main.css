@@ -123,16 +123,16 @@ a {
     background-position: center;
 }
 #land2 {
-    background-image: url("../images/landing/COVER_ChampionSketches.jpg");
-}
-#land3 {
-    background-image: url("../images/landing/COVER_CommunityCoffee.jpg");
-}
-#land4 {
     background-image: url("../images/landing/COVER_InsideTheStudio.jpg");
 }
-#land5 {
+#land3 {
     background-image: url("../images/landing/Cover_Three_Amigos.jpg");
+}
+#land4 {
+    background-image: url("../images/landing/COVER_ChampionSketches.jpg");
+}
+#land5 {
+    background-image: url("../images/landing/COVER_CommunityCoffee.jpg");
 }
 
 #land1 img {
@@ -170,10 +170,31 @@ a {
 
 #map {
     padding: 1em;
+    padding-left: 4em;
+    padding-right: 4em;
 }
 
-main{
-    height: 100vh;
+#clients {
+    padding-left: 4em;
+    padding-right: 4em;
+}
+
+#workThumbs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 5em;
+    padding-right: 5em;
+}
+
+.thumbs {
+    max-width: 20em;
+    padding: 1em;
+}
+
+.thumbs img{
+    width: 100%;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 1024px){
@@ -182,6 +203,11 @@ main{
     }
     #hamburger{
         display: block;
+    }
+    #workThumbs {
+
+        padding-left: 4em;
+        padding-right: 4em;
     }
 }
 
