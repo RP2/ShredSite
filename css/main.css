@@ -256,7 +256,15 @@ modal img{
 
 .imageScroll img {
     width: 100%;
-    margin: 1em;
+}
+
+#prevNext {
+    display: flex;
+    justify-content: space-between;
+}
+
+#prevNext a {
+    text-decoration: none;
 }
 
 @media screen and (max-width: 1024px){
