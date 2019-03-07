@@ -151,11 +151,12 @@ a {
 }
 
 .close{
-    padding: 1em;
+    display: flex;
 }
 
 .close h2{
     margin: 0;
+    padding: .5em;
     cursor: pointer;
 }
 
