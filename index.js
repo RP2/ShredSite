@@ -75,6 +75,7 @@ function navColor(){
         }
     if ($("#mobileNav").hasClass("active")){
         $('.bar').css('background-color', '#fff');
+        $('#mobileNav a').css('color', '#fff');
     } else {
         if (Array.prototype.some.call($('.whiteBG'), function(mobileE) {
             mobileTop = $(mobileE).offset().top - 20;

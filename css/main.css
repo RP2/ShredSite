@@ -12,6 +12,7 @@ nav{
     justify-content: flex-end;
     width: 100vw;
     flex-direction: row;
+    z-index: 5;
 }
 
 .navButton {
@@ -151,7 +152,7 @@ a {
 }
 
 .close{
-    display: flex;
+    position: absolute;
 }
 
 .close h2{
@@ -165,14 +166,13 @@ modal{
     position: fixed;
     flex-direction: column;
     align-content: center;
-    z-index: 1;
+    z-index: 10;
     height: 100vh;
     background-color: white;
 }
 
 modal img{
     width: 100%;
-    padding-top: 0;
 }
 
 #capable {
@@ -233,6 +233,32 @@ modal img{
     justify-content: center;
 }
 
+.workDetail {
+    display: flex;
+    flex-direction: column;
+}
+
+.workDesc {
+    max-width: 50vw;
+    padding: 1em;
+    position: fixed;
+    right: 0;
+}
+
+.workDesc h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.imageScroll {
+    max-width: 45vw;
+}
+
+.imageScroll img {
+    width: 100%;
+    margin: 1em;
+}
+
 @media screen and (max-width: 1024px){
     #navPad {
         display: none;
@@ -244,6 +270,20 @@ modal img{
 
         padding-left: 4em;
         padding-right: 4em;
+    }
+}
+@media screen and (max-width: 800px){
+    .workDetail {
+        display: block;
+        flex-direction: row;
+    }
+    .workDesc {
+        max-width: 100vw;
+        padding: 1em;
+        position: inherit;
+    }
+    .imageScroll {
+        max-width: 100vw;
     }
 }
 
