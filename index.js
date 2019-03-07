@@ -115,3 +115,13 @@ $("#hamburger, #mobileNav a").click(function(){
         navColor();
     }
 })
+
+$(".imageClickable").click(function(){
+   let image = $(this).attr("src")
+   $("modal img").attr("src", image);
+   $("modal").fadeIn(200).css("display", "flex")
+})
+
+$(".close h2").click(function(){
+    $("modal").fadeOut(200)
+})

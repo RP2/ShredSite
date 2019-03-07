@@ -150,6 +150,30 @@ a {
     padding: 1em;
 }
 
+.close{
+    padding: 1em;
+}
+
+.close h2{
+    margin: 0;
+    cursor: pointer;
+}
+
+modal{
+    display: none;
+    position: fixed;
+    flex-direction: column;
+    align-content: center;
+    z-index: 1;
+    height: 100vh;
+    background-color: white;
+}
+
+modal img{
+    width: 100%;
+    padding-top: 0;
+}
+
 #capable {
     display: flex;
     justify-content: center;
