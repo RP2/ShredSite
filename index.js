@@ -100,7 +100,7 @@ $("#dropdown").hover(function(){
 
 $(window).resize(function(){
     if ($(this).width() > 1024) {
-        $("#mobileNav").fadeOut(200)
+        $("#mobileNav").css("display", "none")
     }
 })
 

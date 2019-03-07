@@ -222,6 +222,17 @@ modal img{
     cursor: pointer;
 }
 
+#contact img{
+    width: 100%;
+    display: block;
+}
+
+#contactDetail {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 @media screen and (max-width: 1024px){
     #navPad {
         display: none;
@@ -233,6 +244,13 @@ modal img{
 
         padding-left: 4em;
         padding-right: 4em;
+    }
+}
+
+@media screen and (max-width: 575px){
+    #contactMap {
+        position: fixed;
+        bottom: 0;
     }
 }
 
