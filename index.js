@@ -126,3 +126,82 @@ $(".imageClickable").click(function(){
 $(".close h2").click(function(){
     $("modal").fadeOut(200)
 })
+
+$(document).ready(function(){
+    $("#work img").click(function(){
+        $("#projectLeft img").attr("src", this.src)
+        info(this)
+        $("#projectThumb img").click(function(){
+            $("#projectLeft img").attr("src", this.src)
+            $("html, body").stop().animate({scrollTop: $("nav").height()-($(this).scrollTop() / 2) + "px"}, 500, "swing");
+            findHeight()
+        });
+    });
+    //close animation
+    $("#close h2").click(function(){
+        $("#project").fadeOut(500);
+        $("#work").animate({marginTop: "0px"}, 1000);
+    });
+});
+
+//scroll speed
+// $(window).scroll(function () {
+//     $('#project').css({
+//         'top': $("nav").height()-($(this).scrollTop() / 2) + "px"
+//     });
+// });
+
+//get info on what image clicked then set
+function info(funkName){
+    $("#projectThumb").empty()
+    $("#projectType p").empty()
+    $("#projectDescription p").empty()
+    switch (funkName.id) {
+        case "5X5_THUMBNAIL_100_RUBYRED":
+        break;
+    }
+    // wait for images to load before finding height
+    $(function() {
+        function imageLoaded() {
+           counter--; 
+           if( counter === 0 ) {
+               findHeight()
+           }
+        }
+        let images = $("img");
+        let counter = images.length;
+        images.each(function() {
+            if( this.complete ) {
+                imageLoaded.call( this );
+            } else {
+                $(this).one('load', imageLoaded);
+            }
+        });
+    });
+};
+
+// find height after images load
+function findHeight(){
+    let project = $("#project").height();
+    let nav = $("nav").height();
+    let projectHeight = project + nav; 
+    setHeight(projectHeight)
+}
+
+// set margin top of #work
+function setHeight(projectHeight){
+    let VH = $(window).height();
+        if (projectHeight < VH){
+            $("#work").animate({marginTop: VH + "px"}, 1000);
+        } else if (projectHeight > VH) {
+            $("#work").animate({marginTop: projectHeight + "px"}, 1000);
+        };
+    animate();
+};
+
+//animations
+function animate(){
+    $("html, body").stop().animate({
+        scrollTop: $("#landingSlides").outerHeight() + 5 + "px"}, 500, "swing");
+    $("#project").css("position", "absolute").fadeIn(1000).css("display", "flex");
+}
