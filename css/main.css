@@ -319,7 +319,6 @@ modal{
 .thumbs{
     max-width: 20vw;
     padding: 1em;
-    cursor: pointer;
 }
 
 .thumbs img{

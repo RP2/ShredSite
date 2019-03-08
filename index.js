@@ -223,9 +223,9 @@ function findHeight(){
 function setHeight(projectHeight){
     let VH = $(window).height();
         if (projectHeight < VH){
-            $("#work").animate({marginTop: VH + "px"}, 1000);
+            $("#work").stop().animate({marginTop: VH + "px"}, 1000);
         } else if (projectHeight > VH) {
-            $("#work").animate({marginTop: projectHeight + "px"}, 1000);
+            $("#work").stop().animate({marginTop: projectHeight + "px"}, 1000);
         };
     animate();
 };
@@ -234,6 +234,6 @@ function setHeight(projectHeight){
 function animate(){
     $("html, body").stop().animate({
         scrollTop: $("#landingSlides").outerHeight() + 5 + "px"}, 500, "swing");
-    $("#project").css("position", "absolute").fadeIn(1000).css("display", "flex");
-    $("#mobileNav").fadeOut();
+    $("#project").stop().css("position", "absolute").fadeIn(1000).css("display", "flex");
+    $("#mobileNav").stop().fadeOut();
 }
