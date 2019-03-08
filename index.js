@@ -154,10 +154,19 @@ $(document).ready(function(){
 //get info on what image clicked then set
 function info(funkName){
     $("#projectThumb").empty()
+    $("#projectTitle h3").empty()
     $("#projectType p").empty()
     $("#projectDescription p").empty()
     switch (funkName.id) {
         case "5X5_THUMBNAIL_100_RUBYRED":
+        $("#projectTitle h3").text("OCEAN SPRAY 100% JUICE");
+        $("#projectClient p").text("Ocean Spray Cranberries, Inc.");
+        $("#projectDeliverable p").text("IDENTITY / VISUAL LANGUAGE / BRAND ARCHITECTURE / PACKAGING SYSTEM / PHOTOGRAPHY ART DIRECTION / GRAPHIC STANDARDS");
+        $("#projectThumb")
+        .append(`<div class="thumbs"><img src="./work/oceanSprayJuice/OSJ1.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./work/oceanSprayJuice/OSJ2.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./work/oceanSprayJuice/OSJ3.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./work/oceanSprayJuice/OSJ4.jpg"/></div>`)
         break;
     }
     // wait for images to load before finding height
@@ -204,4 +213,5 @@ function animate(){
     $("html, body").stop().animate({
         scrollTop: $("#landingSlides").outerHeight() + 5 + "px"}, 500, "swing");
     $("#project").css("position", "absolute").fadeIn(1000).css("display", "flex");
+    $("#mobileNav").fadeOut();
 }
