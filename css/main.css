@@ -156,12 +156,21 @@ modal{
     flex-direction: column;
     align-content: center;
     z-index: 10;
+    width: 100vw;
     height: 100vh;
     background-color: white;
 }
 
-modal img{
-    width: 100%;
+#modalContain{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#modalContain img{
+    max-width: 100%;
+    max-height: 80vh;
+    margin: auto;
 }
 
 #capable {
@@ -272,6 +281,10 @@ modal img{
 #close h2 {
     margin: 0;
     cursor: pointer;
+}
+
+#leftContain {
+    width: 100vw;
 }
 
 #projectLeft{

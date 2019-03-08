@@ -120,12 +120,12 @@ $("#hamburger, #mobileNav a").click(function(){
 $(".imageClickable").click(function(){
    let image = $(this).attr("src")
    $("modal img").attr("src", image);
-   $("modal").fadeIn(200).css("display", "flex")
+   $("modal").fadeIn(200).css("display", "grid")
 })
 
-$(".close h2").click(function(){
-    $("modal").fadeOut(200)
-})
+// $("#close h2").click(function(){
+    
+// })
 
 $(document).ready(function(){
     $("#work img").click(function(){
@@ -139,6 +139,7 @@ $(document).ready(function(){
     });
     //close animation
     $("#close h2").click(function(){
+        $("modal").fadeOut(200)
         $("#project").fadeOut(500);
         $("#work").animate({marginTop: "0px"}, 1000);
     });
