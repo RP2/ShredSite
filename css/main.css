@@ -51,7 +51,7 @@ nav h3{
     margin: 1em;
     cursor: pointer;
     display: none;
-    z-index: 100;
+    z-index: 10;
 }
 
 .bar{
@@ -274,10 +274,6 @@ modal img{
     cursor: pointer;
 }
 
-#test{
-    width: 100vw;
-}
-
 #projectLeft{
     padding: 1em;
     display: grid;
@@ -286,7 +282,7 @@ modal img{
 
 #projectLeft img{
     max-width: 100%;
-    max-height: 75vh;
+    max-height: 80vh;
     margin: auto;
 }
 

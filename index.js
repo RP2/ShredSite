@@ -155,18 +155,39 @@ $(document).ready(function(){
 function info(funkName){
     $("#projectThumb").empty()
     $("#projectTitle h3").empty()
-    $("#projectType p").empty()
-    $("#projectDescription p").empty()
+    $("#projectClient p").empty()
+    $("#projectDeliverable p").empty()
     switch (funkName.id) {
         case "5X5_THUMBNAIL_100_RUBYRED":
         $("#projectTitle h3").text("OCEAN SPRAY 100% JUICE");
         $("#projectClient p").text("Ocean Spray Cranberries, Inc.");
         $("#projectDeliverable p").text("IDENTITY / VISUAL LANGUAGE / BRAND ARCHITECTURE / PACKAGING SYSTEM / PHOTOGRAPHY ART DIRECTION / GRAPHIC STANDARDS");
         $("#projectThumb")
-        .append(`<div class="thumbs"><img src="./work/oceanSprayJuice/OSJ1.jpg"/></div>`)
-        .append(`<div class="thumbs"><img src="./work/oceanSprayJuice/OSJ2.jpg"/></div>`)
-        .append(`<div class="thumbs"><img src="./work/oceanSprayJuice/OSJ3.jpg"/></div>`)
-        .append(`<div class="thumbs"><img src="./work/oceanSprayJuice/OSJ4.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/oceanSprayJuice/OSJ1.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/oceanSprayJuice/OSJ2.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/oceanSprayJuice/OSJ3.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/oceanSprayJuice/OSJ4.jpg"/></div>`)
+        break;
+        case "5X5_THUMBNAIL_CC_ESPRESSO":
+        $("#projectTitle h3").text("COMMUNITY COFFEE ESPRESSO CAPSULES");
+        $("#projectClient p").text("Community Coffee Company, LLC");
+        $("#projectDeliverable p").text("IDENTITY / VISUAL LANGUAGE / BRAND ARCHITECTURE / PACKAGING SYSTEM");
+        $("#projectThumb")
+        .append(`<div class="thumbs"><img src="./images/projects/communityFounder/CF1.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/communityFounder/CF2.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/communityFounder/CF3.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/communityFounder/CF4.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/communityFounder/ShredSF_CC_Espresso.jpg"/></div>`)
+        break;
+        case "5X5_THUMBNAIL_CC_Porch":
+        $("#projectTitle h3").text("PORCH BREEZE");
+        $("#projectClient p").text("Community Coffee Company, LLC");
+        $("#projectDeliverable p").text("IDENTITY / VISUAL LANGUAGE / BRAND ARCHITECTURE / PACKAGING SYSTEM");
+        $("#projectThumb")
+        .append(`<div class="thumbs"><img src="./images/projects/comPorchBreeze/CPB1.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/comPorchBreeze/CPB2.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/comPorchBreeze/CPB3.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/comPorchBreeze/CPB4.jpg"/></div>`)
         break;
     }
     // wait for images to load before finding height
