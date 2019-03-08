@@ -321,10 +321,6 @@ modal{
     padding: 1em;
 }
 
-.thumbs img{
-    width: 100%;
-}
-
 @media screen and (max-width: 1024px){
     #navPad {
         display: none;

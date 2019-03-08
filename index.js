@@ -190,6 +190,32 @@ function info(funkName){
         .append(`<div class="thumbs"><img src="./images/projects/comPorchBreeze/CPB3.jpg"/></div>`)
         .append(`<div class="thumbs"><img src="./images/projects/comPorchBreeze/CPB4.jpg"/></div>`)
         break;
+        case "5X5_THUMBNAIL_CLUSTERS":
+        $("#projectTitle h3").text("CRAISINS FRUIT CLUSTERS");
+        $("#projectClient p").text("Ocean Spray Cranberries, Inc.");
+        $("#projectDeliverable p").text("IDENTITY / VISUAL LANGUAGE / BRAND ARCHITECTURE / PACKAGING SYSTEM / PHOTOGRAPHY ART DIRECTION / GRAPHIC STANDARDS");
+        $("#projectThumb")
+        .append(`<div class="thumbs"><img src="./images/projects/OSCluster/cluster1.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/OSCluster/cluster2.jpg"/></div>`)
+        break;
+        case "5X5_THUMBNAIL_COLD_BREW_KIT":
+        $("#projectTitle h3").text("COMMUNITY COFFEE COLD BREW COFFEE KIT");
+        $("#projectClient p").text("Community Coffee Company, LLC");
+        $("#projectDeliverable p").text("IDENTITY / VISUAL LANGUAGE / BRAND ARCHITECTURE / PACKAGING SYSTEM");
+        $("#projectThumb")
+        .append(`<div class="thumbs"><img src="./images/projects/coldBrew/cold1.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/coldBrew/cold2.jpg"/></div>`)
+        break;
+        case "5X5_THUMBNAIL_CRAISINS":
+        $("#projectTitle h3").text("OCEAN SPRAY CRAISINS");
+        $("#projectClient p").text("Ocean Spray Cranberries, Inc.");
+        $("#projectDeliverable p").text("IDENTITY / VISUAL LANGUAGE / BRAND ARCHITECTURE / PACKAGING SYSTEM / PHOTOGRAPHY ART DIRECTION / GRAPHIC STANDARDS");
+        $("#projectThumb")
+        .append(`<div class="thumbs"><img src="./images/projects/craisins/craisins1.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/craisins/craisins2.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/craisins/craisins3.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/craisins/craisins4.jpg"/></div>`)
+        break;
     }
     // wait for images to load before finding height
     $(function() {
