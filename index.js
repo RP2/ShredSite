@@ -333,6 +333,32 @@ function info(funkName){
         .append(`<div class="thumbs"><img src="./images/projects/lindsayAlmonds/butter2.jpg"/></div>`)
         .append(`<div class="thumbs"><img src="./images/projects/lindsayAlmonds/butter3.jpg"/></div>`)
         break;
+        case "5X5_THUMBNAIL_Lindsay_Infusions":
+        $("#projectTitle h3").text("LINDSAY INFUSIONS");
+        $("#projectClient p").text("Bell-Carter Foods, Inc.");
+        $("#projectDeliverable p").text("IDENTITY / VISUAL LANGUAGE / BRAND ARCHITECTURE / LINE EXTENSION / PACKAGING SYSTEM / ILLUSTRATION ");
+        $("#projectThumb")
+        .append(`<div class="thumbs"><img src="./images/projects/infusions/infuse1.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/infusions/infuse2.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/infusions/infuse3.jpg"/></div>`)
+        break;
+        case "5X5_THUMBNAIL_Lindsay_Olive_Oil":
+        $("#projectTitle h3").text("LINDSAY OLIVE OIL");
+        $("#projectClient p").text("Bell-Carter Foods, Inc.");
+        $("#projectDeliverable p").text("IDENTITY / VISUAL LANGUAGE / BRAND ARCHITECTURE / LINE EXTENSION / PACKAGING SYSTEM");
+        $("#projectThumb")
+        .append(`<div class="thumbs"><img src="./images/projects/oliveoil/oliveoil1.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/oliveoil/oliveoil2.jpg"/></div>`)
+        break;
+        case "5X5_THUMBNAIL_NEXXUS":
+        $("#projectTitle h3").text("NEXXUS STYLE GUIDE");
+        $("#projectClient p").text("Unilever North America");
+        $("#projectDeliverable p").text("VISUAL LANGUAGE / GRAPHIC STANDARDS");
+        $("#projectThumb")
+        .append(`<div class="thumbs"><img src="./images/projects/nexxus/nex1.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/nexxus/nex2.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/nexxus/nex3.jpg"/></div>`)
+        break;
         // case "":
         // $("#projectTitle h3").text("");
         // $("#projectClient p").text("");
