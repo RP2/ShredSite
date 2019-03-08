@@ -237,6 +237,102 @@ function info(funkName){
         .append(`<div class="thumbs"><img src="./images/projects/dinamita/dinamita3.jpg"/></div>`)
         .append(`<div class="thumbs"><img src="./images/projects/dinamita/dinamita4.jpg"/></div>`)
         break;
+        case "5X5_THUMBNAIL_Doritos_Loaded":
+        $("#projectTitle h3").text("DORITOS LOADED");
+        $("#projectClient p").text("Frito-Lay, North America Inc.");
+        $("#projectDeliverable p").text("PRODUCTION STRATEGY / LINE EXTENSION / BRAND ARCHITECTURE / PACKAGING SYSTEM / PHOTO ART DIRECTION");
+        $("#projectThumb")
+        .append(`<div class="thumbs"><img src="./images/projects/loaded/loaded1.jpg"/></div>`)
+        break;
+        case "5X5_THUMBNAIL_Farmers_Thumb":
+        $("#projectTitle h3").text("OCEAN SPRAY FARMERS LOGO");
+        $("#projectClient p").text("Ocean Spray Cranberries, Inc.");
+        $("#projectDeliverable p").text("LOGOMARK / PACKAGING SYSTEM / VISUAL LANGUAGE / GRAPHIC STANDARDS");
+        break;
+        case "5X5_THUMBNAIL_Friendlys_Duo":
+        $("#projectTitle h3").text("FRIENDLY'S DESSERT CUPS");
+        $("#projectClient p").text("Friendly’s");
+        $("#projectDeliverable p").text("PACKAGING SYSTEM / ILLUSTRATION / BRAND ARCHITECTURE");
+        $("#projectThumb")
+        .append(`<div class="thumbs"><img src="./images/projects/friendlys/friend1.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/friendlys/friend2.jpg"/></div>`)
+        break;
+        case "5X5_THUMBNAIL_GNC_Earth_Genius":
+        $("#projectTitle h3").text("GNC EARTH GENIUS");
+        $("#projectClient p").text("GNC");
+        $("#projectDeliverable p").text("IDENTITY / VISUAL LANGUAGE / BRAND ARCHITECTURE / PACKAGING SYSTEM / ART DIRECTION IN COLLABORATION WITH GNC");
+        $("#projectThumb")
+        .append(`<div class="thumbs"><img src="./images/projects/earthGenius/genius.jpg"/></div>`)
+        break;
+        case "5X5_THUMBNAIL_Greg_Loiacono_2":
+        $("#projectTitle h3").text("GREG LOIACONO");
+        $("#projectClient p").text("Greg Loiacono");
+        $("#projectDeliverable p").text("IDENTITY / VISUAL LANGUAGE / PACKAGING SYSTEM / ILLUSTRATION / PRODUCTION STRATEGY");
+        $("#projectThumb")
+        .append(`<div class="thumbs"><img src="./images/projects/loiacono/loia1.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/loiacono/loia2.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/loiacono/loia3.jpg"/></div>`)
+        break;
+        case "5X5_THUMBNAIL_Indulgences":
+        $("#projectTitle h3").text("SMARTFOOD INDULGENCES");
+        $("#projectClient p").text("Smartfood, Inc.");
+        $("#projectDeliverable p").text("IDENTITY / VISUAL LANGUAGE / BRAND ARCHITECTURE / PACKAGING SYSTEM /  ILLUSTRATION / ART DIRECTION");
+        $("#projectThumb")
+        .append(`<div class="thumbs"><img src="./images/projects/indulgences/indulge1.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/indulgences/indulge2.jpg"/></div>`)
+        break;
+        case "5X5_THUMBNAIL_KOOBA":
+        $("#projectTitle h3").text("KOOBA TARGET GAME");
+        $("#projectClient p").text("InPlay");
+        $("#projectDeliverable p").text("VISUAL LANGUAGE / BRAND ARCHITECTURE / PACKAGING SYSTEM / ILLUSTRATION / GRAPHIC STANDARDS");
+        $("#projectThumb")
+        .append(`<div class="thumbs"><img src="./images/projects/kooba/kooba1.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/kooba/kooba2.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/kooba/kooba3.jpg"/></div>`)
+        break;
+        case "5X5_THUMBNAIL_Krusteaz":
+        $("#projectTitle h3").text("KRUSTEAZ");
+        $("#projectClient p").text("Continental Mills, Inc.");
+        $("#projectDeliverable p").text("IDENTITY / VISUAL LANGUAGE / BRAND ARCHITECTURE / PACKAGING SYSTEM / PHOTOGRAPHY ART DIRECTION / ILLUSTRATION ART DIRECTION");
+        $("#projectThumb")
+        .append(`<div class="thumbs"><img src="./images/projects/krusteaz/krust1.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/krusteaz/krust2.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/krusteaz/krust3.jpg"/></div>`)
+        break;
+        case "5X5_THUMBNAIL_LAYERS":
+        $("#projectTitle h3").text("TRIDENT LAYERS");
+        $("#projectClient p").text("Kraft Foods");
+        $("#projectDeliverable p").text("IDENTITY / VISUAL LANGUAGE / BRAND ARCHITECTURE / PACKAGING SYSTEM / ILLUSTRATION ART DIRECTION / GRAPHIC STANDARDS");
+        $("#projectThumb")
+        .append(`<div class="thumbs"><img src="./images/projects/layers/layer1.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/layers/layer2.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/layers/layer3.jpg"/></div>`)
+        break;
+        case "5X5_THUMBNAIL_LINDSAYPEPPERS":
+        $("#projectTitle h3").text("LINDSAY PEPPERS");
+        $("#projectClient p").text("Bell-Carter Foods, Inc.");
+        $("#projectDeliverable p").text("IDENTITY / VISUAL LANGUAGE / BRAND ARCHITECTURE / PACKAGING SYSTEM / ILLUSTRATION");
+        $("#projectThumb")
+        .append(`<div class="thumbs"><img src="./images/projects/lindsay/lindsay1.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/lindsay/lindsay2.jpg"/></div>`)
+        break;
+        case "5X5_THUMBNAIL_LINDSAY_OIL":
+        $("#projectTitle h3").text("LINDSAY NATURALS");
+        $("#projectClient p").text("Bell-Carter Foods, Inc.");
+        $("#projectDeliverable p").text("IDENTITY / VISUAL LANGUAGE / BRAND ARCHITECTURE / PACKAGING SYSTEM / ILLUSTRATION ");
+        $("#projectThumb")
+        .append(`<div class="thumbs"><img src="./images/projects/lindsayOil/oil1.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/lindsayOil/oil2.jpg"/></div>`)
+        break;
+        case "5X5_THUMBNAIL_Lindsay_Almond_Butter":
+        $("#projectTitle h3").text("LINDSAY ALMOND BUTTER");
+        $("#projectClient p").text("Bell-Carter Foods, Inc.");
+        $("#projectDeliverable p").text("IDENTITY / VISUAL LANGUAGE / BRAND ARCHITECTURE / LINE EXTENSION / PACKAGING SYSTEM / ILLUSTRATION ");
+        $("#projectThumb")
+        .append(`<div class="thumbs"><img src="./images/projects/lindsayAlmonds/butter1.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/lindsayAlmonds/butter2.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/lindsayAlmonds/butter3.jpg"/></div>`)
+        break;
         // case "":
         // $("#projectTitle h3").text("");
         // $("#projectClient p").text("");
