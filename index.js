@@ -216,6 +216,34 @@ function info(funkName){
         .append(`<div class="thumbs"><img src="./images/projects/craisins/craisins3.jpg"/></div>`)
         .append(`<div class="thumbs"><img src="./images/projects/craisins/craisins4.jpg"/></div>`)
         break;
+        case "5X5_THUMBNAIL_Cheetos_Thumb":
+        $("#projectTitle h3").text("CHEETOS FLAMIN' HOT DORITOS DINAMITA");
+        $("#projectClient p").text("Frito-Lay, North America Inc.");
+        $("#projectDeliverable p").text("PRODUCTION STRATEGY / BRAND ARCHITECTURE / PACKAGING SYSTEM / DIGITAL ILLUSTRATION ART DIRECTION");
+        break;
+        case "5X5_THUMBNAIL_Concept_pure_GREEN":
+        $("#projectTitle h3").text("Dentyne Pure");
+        $("#projectClient p").text("Dentyne");
+        $("#projectDeliverable p").text("Gum package concept");
+        break;
+        case "5X5_THUMBNAIL_DINAMITA_GREEN":
+        $("#projectTitle h3").text("DORITOS DINAMITA");
+        $("#projectClient p").text("Frito-Lay, North America Inc.");
+        $("#projectDeliverable p").text("PRODUCTION STRATEGY / LINE EXTENSION / BRAND ARCHITECTURE / PACKAGING SYSTEM / ILLUSTRATION ART DIRECTION");
+        $("#projectThumb")
+        .append(`<div class="thumbs"><img src="./images/thumbnail/5X5_THUMBNAIL_DINAMITA_Purple.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/dinamita/dinamita1.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/dinamita/dinamita2.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/dinamita/dinamita3.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/dinamita/dinamita4.jpg"/></div>`)
+        break;
+        // case "":
+        // $("#projectTitle h3").text("");
+        // $("#projectClient p").text("");
+        // $("#projectDeliverable p").text("");
+        // $("#projectThumb")
+        // .append(`<div class="thumbs"><img src="./images/projects//.jpg"/></div>`)
+        // break;
     }
     // wait for images to load before finding height
     $(function() {
