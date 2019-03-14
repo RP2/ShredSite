@@ -26,11 +26,25 @@ $("a").on('click', function(event) {
       });
     }
   });
+  $("#land1").on("click", function(e){
+    let video = $("#coffee");
+      if(video[0].muted){
+          video[0].muted = false;
+      }
+      else{
+          video[0].muted = true;
+      }
+  });
+
 //black and white
 $(document).ready(function() {
     navColor();
 });
 $(window).scroll(function() {
+    if ($(window).scrollTop() > $("#land1").outerHeight()){
+        let video = $("#coffee");
+        video[0].muted = true;
+    }
     navColor();
 });
 function navColor(){
