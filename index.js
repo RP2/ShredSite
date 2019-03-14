@@ -359,6 +359,62 @@ function info(funkName){
         .append(`<div class="thumbs"><img src="./images/projects/nexxus/nex2.jpg"/></div>`)
         .append(`<div class="thumbs"><img src="./images/projects/nexxus/nex3.jpg"/></div>`)
         break;
+        case "5X5_THUMBNAIL_NRC_CHAMPION_New":
+        $("#projectTitle h3").text("CHAMPION");
+        $("#projectClient p").text("National Raisin Company");
+        $("#projectDeliverable p").text("IDENTITY / VISUAL LANGUAGE / PACKAGING SYSTEM / BRAND ARCHITECTURE / ILLUSTRATION / PRODUCTION STRATEGY");
+        $("#projectThumb")
+        .append(`<div class="thumbs"><img src="./images/projects/champion/champ1.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/champion/champ2.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/champion/champ3.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/champion/champ4.jpg"/></div>`)
+        break;
+        case "5X5_THUMBNAIL_NRC_RAISELS_2":
+        $("#projectTitle h3").text("RAISELS");
+        $("#projectClient p").text("National Raisin Company");
+        $("#projectDeliverable p").text("IDENTITY / VISUAL LANGUAGE / PACKAGING SYSTEM / BRAND ARCHITECTURE / PRODUCTION STRATEGY");
+        $("#projectThumb")
+        .append(`<div class="thumbs"><img src="./images/projects/raisels/rais1.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/raisels/rais2.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/raisels/rais3.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/raisels/rais4.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/raisels/rais5.jpg"/></div>`)
+        break;
+        case "5X5_THUMBNAIL_OS_Cran_Amazing_Orange":
+        $("#projectTitle h3").text("OCEAN SPRAY CRAN AMAZING");
+        $("#projectClient p").text("Ocean Spray Cranberries, Inc.");
+        $("#projectDeliverable p").text("IDENTITY / VISUAL LANGUAGE / BRAND ARCHITECTURE / PACKAGING SYSTEM / ILLUSTRATION ART DIRECTION / GRAPHIC STANDARDS");
+        $("#projectThumb")
+        .append(`<div class="thumbs"><img src="./images/projects/cranAmaze/1.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/cranAmaze/2.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/cranAmaze/3.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/cranAmaze/4.jpg"/></div>`)
+        break;
+        case "5X5_THUMBNAIL_OS_Cran_America":
+        $("#projectTitle h3").text("OCEAN SPRAY CRAN AMERICA");
+        $("#projectClient p").text("Ocean Spray Cranberries, Inc.");
+        $("#projectDeliverable p").text("VISUAL LANGUAGE / BRAND ARCHITECTURE / PACKAGING SYSTEM / ILLUSTRATION");
+        $("#projectThumb")
+        .append(`<div class="thumbs"><img src="./images/projects/cranAmerica/1.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/cranAmerica/2.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/cranAmerica/3.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/cranAmerica/4.jpg"/></div>`)
+        break;
+        case "5X5_THUMBNAIL_OS_Organic":
+        $("#projectTitle h3").text("100% ORGANIC & PURE");
+        $("#projectClient p").text("Ocean Spray Cranberries, Inc.");
+        $("#projectDeliverable p").text("IDENTITY / VISUAL LANGUAGE / BRAND ARCHITECTURE / PACKAGING SYSTEM / PHOTOGRAPHY ART DIRECTION / GRAPHIC STANDARDS");
+        $("#projectThumb")
+        .append(`<div class="thumbs"><img src="./images/projects/osPure/1.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/osPure/2.jpg"/></div>`)
+        break;
+        case "":
+        $("#projectTitle h3").text("");
+        $("#projectClient p").text("");
+        $("#projectDeliverable p").text("");
+        $("#projectThumb")
+        .append(`<div class="thumbs"><img src="./images/projects//.jpg"/></div>`)
+        break;
         // case "":
         // $("#projectTitle h3").text("");
         // $("#projectClient p").text("");
