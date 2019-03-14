@@ -408,20 +408,122 @@ function info(funkName){
         .append(`<div class="thumbs"><img src="./images/projects/osPure/1.jpg"/></div>`)
         .append(`<div class="thumbs"><img src="./images/projects/osPure/2.jpg"/></div>`)
         break;
-        case "":
+        case "5X5_THUMBNAIL_POM":
+        $("#projectTitle h3").text("TRIDENT VITALITY");
+        $("#projectClient p").text("Kraft Foods");
+        $("#projectDeliverable p").text("IDENTITY / VISUAL LANGUAGE / BRAND ARCHITECTURE / PACKAGING SYSTEM / ILLUSTRATION ART DIRECTION / GRAPHIC STANDARDS");
+        $("#projectThumb")
+        .append(`<div class="thumbs"><img src="./images/projects/vitality/1.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/vitality/2.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/vitality/3.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/vitality/4.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/vitality/5.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/vitality/6.jpg"/></div>`)
+        break;
+        case "5X5_THUMBNAIL_POPS":
+        $("#projectTitle h3").text("LAY'S AIR POPS");
+        $("#projectClient p").text("Frito-Lay, North America Inc.");
+        $("#projectDeliverable p").text("IDENTITY / VISUAL LANGUAGE / BRAND ARCHITECTURE / PACKAGING SYSTEM / ART DIRECTION");
+        $("#projectThumb")
+        .append(`<div class="thumbs"><img src="./images/projects/airpop/1.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/airpop/2.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/airpop/3.jpg"/></div>`)
+        break;
+        case "5X5_THUMBNAIL_REDBAG":
+        $("#projectTitle h3").text("COMMUNITY COFFEE");
+        $("#projectClient p").text("Community Coffee Company, LLC");
+        $("#projectDeliverable p").text("IDENTITY / VISUAL LANGUAGE / BRAND ARCHITECTURE / PACKAGING SYSTEM / ILLUSTRATION ART DIRECTION / GRAPHIC STANDARDS");
+        $("#projectThumb")
+        .append(`<div class="thumbs"><img src="./images/projects/community/1.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/community/2.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/community/3.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/community/4.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/community/5.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/community/6.jpg"/></div>`)
+        break;
+        case "5X5_THUMBNAIL_SMURFS":
+        $("#projectTitle h3").text("SUAVE KIDS SMURFS");
+        $("#projectClient p").text("Unilever North America");
+        $("#projectDeliverable p").text("VISUAL LANGUAGE / BRAND ARCHITECTURE / PACKAGING SYSTEM / ILLUSTRATION DEVELOPMENT / ART DIRECTION");
+        $("#projectThumb")
+        .append(`<div class="thumbs"><img src="./images/projects/smurfs/1.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/smurfs/2.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/smurfs/3.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/smurfs/4.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/smurfs/5.jpg"/></div>`)
+        break;
+        case "5X5_THUMBNAIL_SPARKLING":
+        $("#projectTitle h3").text("OCEAN SPRAY SPARKLING");
+        $("#projectClient p").text("Ocean Spray Cranberries, Inc.");
+        $("#projectDeliverable p").text("IDENTITY / VISUAL LANGUAGE / BRAND ARCHITECTURE / PACKAGING SYSTEM / ILLUSTRATION ART DIRECTION / GRAPHIC STANDARDS");
+        $("#projectThumb")
+        .append(`<div class="thumbs"><img src="./images/projects/sparkle/1.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/sparkle/2.jpg"/></div>`)
+        break;
+        case "5X5_THUMBNAIL_SUAVEKIDS":
+        $("#projectTitle h3").text("SUAVE KIDS HAIR CARE");
+        $("#projectClient p").text("Unilever North America");
+        $("#projectDeliverable p").text("VISUAL LANGUAGE / BRAND ARCHITECTURE / PACKAGING SYSTEM / ILLUSTRATION DEVELOPMENT / ART DIRECTION ");
+        $("#projectThumb")
+        .append(`<div class="thumbs"><img src="./images/projects/suavekids/1.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/suavekids/2.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/suavekids/3.jpg"/></div>`)
+        break;
+        case "5X5_THUMBNAIL_SUAVE_DEO":
+        $("#projectTitle h3").text("SUAVE DEODORANT");
+        $("#projectClient p").text("Unilever North America");
+        $("#projectDeliverable p").text("VISUAL LANGUAGE / BRAND ARCHITECTURE / PACKAGING SYSTEM / ILLUSTRATION DEVELOPMENT / ART DIRECTION ");
+        $("#projectThumb")
+        .append(`<div class="thumbs"><img src="./images/projects/deodorant/1.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/deodorant/2.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/deodorant/3.jpg"/></div>`)
+        break;
+        case "5X5_THUMBNAIL_Suave_Bodywash_Lotion":
+        $("#projectTitle h3").text("SUAVE BODY WASH");
+        $("#projectClient p").text("Unilever North America");
+        $("#projectDeliverable p").text("VISUAL LANGUAGE / BRAND ARCHITECTURE / PACKAGING SYSTEM / ILLUSTRATION / GRAPHIC STANDARDS");
+        $("#projectThumb")
+        .append(`<div class="thumbs"><img src="./images/projects/bodywash/1.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/bodywash/2.jpg"/></div>`)
+        break;
+        case "5X5_THUMBNAIL_Suavemen":
+        $("#projectTitle h3").text("SUAVE MEN HERITAGE EDITION");
+        $("#projectClient p").text("Unilever");
+        $("#projectDeliverable p").text("U.S PRODUCT ROLL-OUT / ARCHITECTURE / PRODUCTION STRATEGY / LINE EXTENSION ");
+        $("#projectThumb")
+        .append(`<div class="thumbs"><img src="./images/projects/suavemen/1.jpg"/></div>`)
+        break;
+        case "5X5_THUMBNAIL_Top_N_Go":
+        $("#projectTitle h3").text("FRITO LAY TOP N GO");
+        $("#projectClient p").text("Frito Lay North America, Inc");
+        $("#projectDeliverable p").text("IDENTITY / VISUAL LANGUAGE / BRAND ARCHITECTURE / PACKAGING SYSTEM / PHOTOGRAPHY ART DIRECTION ");
+        $("#projectThumb")
+        .append(`<div class="thumbs"><img src="./images/projects/topngo/1.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/topngo/2.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/topngo/3.jpg"/></div>`)
+        break;
+        case "5X5_THUMBNAIL_VALERIE":
         $("#projectTitle h3").text("");
         $("#projectClient p").text("");
         $("#projectDeliverable p").text("");
         $("#projectThumb")
-        .append(`<div class="thumbs"><img src="./images/projects//.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/valerie/1.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/valerie/2.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/valerie/3.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/valerie/4.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/valerie/5.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/valerie/6.jpg"/></div>`)
         break;
-        // case "":
-        // $("#projectTitle h3").text("");
-        // $("#projectClient p").text("");
-        // $("#projectDeliverable p").text("");
-        // $("#projectThumb")
-        // .append(`<div class="thumbs"><img src="./images/projects//.jpg"/></div>`)
-        // break;
+        case "5X5_hair":
+        $("#projectTitle h3").text("SUAVE HAIR INNOVATIONS");
+        $("#projectClient p").text("Unilever North America");
+        $("#projectDeliverable p").text("VISUAL LANGUAGE / SALES COLLATERAL / PRINT STRATEGY ");
+        $("#projectThumb")
+        .append(`<div class="thumbs"><img src="./images/projects/hair/1.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/hair/2.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/hair/3.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/hair/4.jpg"/></div>`)
+        break;
     }
     // wait for images to load before finding height
     $(function() {
