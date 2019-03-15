@@ -133,11 +133,16 @@ a {
     padding-left: 1em;
 }
 
+#land1 a {
+    color: white;
+    text-decoration: none;
+}
+
 #land2 {
     background-image: url("../images/landing/COVER_InsideTheStudio.jpg");
 }
 #land3 {
-    background-image: url("../images/landing/Cover_Three_Amigos.jpg");
+    background-image: url("../images/landing/COVER_Building_Shot.jpg");
 }
 #land4 {
     background-image: url("../images/landing/COVER_ChampionSketches.jpg");
@@ -160,7 +165,7 @@ a {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-video {
+#coffee {
     position: absolute;
     top: 0;
     left: 0;
@@ -348,6 +353,25 @@ modal{
 .thumbs{
     max-width: 20vw;
     padding: 1em;
+}
+
+#videosNav {
+    z-index: 1;
+    position: initial;
+}
+
+#secretVids{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.secretContain{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin: 1em;
 }
 
 @media screen and (max-width: 1024px){

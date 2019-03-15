@@ -35,6 +35,20 @@ $("a").on('click', function(event) {
           video[0].muted = true;
       }
   });
+  $("video").on("click", function(){
+    let video = $(this);
+      if(video[0].muted){
+        let getVids = $(".secretContain video")
+        for (let eachVid of getVids) {
+            eachVid.muted = true;
+        }
+          video[0].muted = false;
+          video[0].currentTime = 0;
+      }
+      else{
+          video[0].muted = true;
+      }
+  });
 
 //black and white
 $(document).ready(function() {
@@ -44,6 +58,9 @@ $(window).scroll(function() {
     if ($(window).scrollTop() > $("#land1").outerHeight()){
         let video = $("#coffee");
         video[0].muted = true;
+        $("nav").css("z-index", 0)
+    } else {
+        $("nav").css("z-index", 1)
     }
     navColor();
 });
@@ -581,7 +598,7 @@ function setHeight(projectHeight){
 //animations
 function animate(){
     $("html, body").stop().animate({
-        scrollTop: $("#landingSlides").outerHeight() + 5 + "px"}, 500, "swing");
+        scrollTop: $("#landingSlides").outerHeight() + 5 + "px"}, 1000, "swing");
     $("#project").stop().css("position", "absolute").fadeIn(1000).css("display", "flex");
     $("#mobileNav").stop().fadeOut();
 }
