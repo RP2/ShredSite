@@ -1,9 +1,19 @@
-@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+@font-face {
+    font-family: "Archer-Medium";
+    src: url("../Fonts/Archer-Medium.otf")
+}
 
 body {
-    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     color: #012d5e;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Archer-Medium', sans-serif;
+    /* color: #f10505; */
 }
 
 nav{
