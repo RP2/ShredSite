@@ -53,14 +53,45 @@ $("a").on('click', function(event) {
 //blue and white
 $(document).ready(function() {
     navColor();
+    $("#work img").click(function(){
+        if ($("#project").css("display", "flex")){
+            $("#project").css("display", "none");
+        }
+        $("#projectLeft img").attr("src", this.src)
+        info(this)
+        $("#projectThumb img").click(function(){
+            $("#projectLeft img").attr("src", this.src)
+            $("html, body").stop().animate({scrollTop: $("nav").height()-($(this).scrollTop() / 2) + "px"}, 500, "swing");
+            findHeight()
+        });
+    });
+    //close animation
+    $("#close h2").click(function(){
+        $("modal").fadeOut(200)
+        $("#project").fadeOut(500);
+        $("#work").animate({marginTop: "0px"}, 1000);
+    });
+
+    let banner = $(".mobileBan");
+    let bannerVideo = $(".mobileVid");
+
+    if (/iPad|iPhone|iPod/.test(navigator.platform)) {
+        $(banner).css("background-image", "url(" + bannerVideo[0].poster + ")");
+        $(banner).css("background-size", "cover");
+        $(banner).css("background-position", "center");
+        $(bannerVideo).css("display", "none")= 'none';
+    }
 });
+
 $(window).scroll(function() {
+    let video = $("#coffee");
     if ($(window).scrollTop() > $("#land1").outerHeight()){
-        let video = $("#coffee");
         video[0].muted = true;
+        video[0].pause();
         $("nav").css("z-index", 0)
     } else {
         $("nav").css("z-index", 1)
+        video[0].play();
     }
     navColor();
 });
@@ -158,26 +189,6 @@ $(".imageClickable").click(function(){
     
 // })
 
-$(document).ready(function(){
-    $("#work img").click(function(){
-        if ($("#project").css("display", "flex")){
-            $("#project").css("display", "none");
-        }
-        $("#projectLeft img").attr("src", this.src)
-        info(this)
-        $("#projectThumb img").click(function(){
-            $("#projectLeft img").attr("src", this.src)
-            $("html, body").stop().animate({scrollTop: $("nav").height()-($(this).scrollTop() / 2) + "px"}, 500, "swing");
-            findHeight()
-        });
-    });
-    //close animation
-    $("#close h2").click(function(){
-        $("modal").fadeOut(200)
-        $("#project").fadeOut(500);
-        $("#work").animate({marginTop: "0px"}, 1000);
-    });
-});
 
 //scroll speed
 // $(window).scroll(function () {
