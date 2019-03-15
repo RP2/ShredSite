@@ -3,7 +3,7 @@
 body {
     font-family: 'Nanum Gothic', sans-serif;
     font-size: 16px;
-    color: black;
+    color: #012d5e;
 }
 
 nav{
@@ -67,7 +67,7 @@ nav h3{
     position: absolute;
     width: 100vw;
     text-align: center;
-    background: black;
+    background: #012d5e ;
     display: none;
     justify-content: center;
     flex-direction: column;
@@ -353,6 +353,14 @@ modal{
 .thumbs{
     max-width: 20vw;
     padding: 1em;
+}
+
+#projectClient, #projectDeliverable {
+    padding-top: 1em;
+}
+
+#projectClient h3, #projectDeliverable h3, #projectClient p, #projectDeliverable p{
+    margin: 0;
 }
 
 #videosNav {

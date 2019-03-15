@@ -50,7 +50,7 @@ $("a").on('click', function(event) {
       }
   });
 
-//black and white
+//blue and white
 $(document).ready(function() {
     navColor();
 });
@@ -75,7 +75,7 @@ function navColor(){
             return false;
         }
     })) {
-            $('.navButton').css('color', '#000');
+            $('.navButton').css('color', '#012d5e');
         } else {
             $('.navButton').css('color', '#fff');
         }
@@ -100,7 +100,7 @@ function navColor(){
             return false;
         }
     })) {
-            $('#contactBtn').css('color', '#000');
+            $('#contactBtn').css('color', '#012d5e');
         } else {
             $('#contactBtn').css('color', '#fff');
         }
@@ -117,7 +117,7 @@ function navColor(){
                 return false;
             }
         })) {
-                $('.bar').css('background-color', '#000');
+                $('.bar').css('background-color', '#012d5e');
             } else {
                 $('.bar').css('background-color', '#fff');
             }
@@ -160,6 +160,9 @@ $(".imageClickable").click(function(){
 
 $(document).ready(function(){
     $("#work img").click(function(){
+        if ($("#project").css("display", "flex")){
+            $("#project").css("display", "none");
+        }
         $("#projectLeft img").attr("src", this.src)
         info(this)
         $("#projectThumb img").click(function(){
