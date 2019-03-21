@@ -135,6 +135,19 @@ function navColor(){
         } else {
             $('#contactBtn').css('color', '#fff');
         }
+        if (Array.prototype.some.call($('.whiteBG'), function(contactE) {
+            contactTop = $(contactE).offset().top - 130;
+            contactBottom = $(contactE).outerHeight() + contactTop - 40;
+            if (scrollPosition > contactTop && scrollPosition < contactBottom) {
+                return true;
+            } else {
+                return false;
+            }
+        })) {
+                $('#blogBtn').css('color', '#012d5e');
+            } else {
+                $('#blogBtn').css('color', '#fff');
+            }
     if ($("#mobileNav").hasClass("active")){
         $('.bar').css('background-color', '#fff');
         $('#mobileNav a').css('color', '#fff');
