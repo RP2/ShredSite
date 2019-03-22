@@ -212,15 +212,16 @@ $(".imageClickable").click(function(){
 
 //get info on what image clicked then set
 function info(funkName){
-    $("#projectThumb").empty()
-    $("#projectTitle h3").empty()
-    $("#projectClient p").empty()
-    $("#projectDeliverable p").empty()
+    $("#projectThumb").empty();
+    $("#projectTitle h3").empty();
+    $("#projectClient p").empty();
+    $("#short").empty();
+    $("#long").empty();
     switch (funkName.id) {
         case "5X5_THUMBNAIL_100_RUBYRED":
         $("#projectTitle h3").text("OCEAN SPRAY 100% JUICE");
         $("#projectClient p").text("Ocean Spray Cranberries, Inc.");
-        $("#projectDeliverable p").text("IDENTITY / VISUAL LANGUAGE / BRAND ARCHITECTURE / PACKAGING SYSTEM / PHOTOGRAPHY ART DIRECTION / GRAPHIC STANDARDS");
+        $("#short").text("IDENTITY / VISUAL LANGUAGE / BRAND ARCHITECTURE / PACKAGING SYSTEM / PHOTOGRAPHY ART DIRECTION / GRAPHIC STANDARDS");
         $("#projectThumb")
         .append(`<div class="thumbs"><img src="./images/projects/oceanSprayJuice/OSJ1.jpg"/></div>`)
         .append(`<div class="thumbs"><img src="./images/projects/oceanSprayJuice/OSJ2.jpg"/></div>`)
@@ -230,7 +231,7 @@ function info(funkName){
         case "5X5_THUMBNAIL_CC_ESPRESSO":
         $("#projectTitle h3").text("COMMUNITY COFFEE ESPRESSO CAPSULES");
         $("#projectClient p").text("Community Coffee Company, LLC");
-        $("#projectDeliverable p").text("IDENTITY / VISUAL LANGUAGE / BRAND ARCHITECTURE / PACKAGING SYSTEM");
+        $("#short").text("IDENTITY / VISUAL LANGUAGE / BRAND ARCHITECTURE / PACKAGING SYSTEM");
         $("#projectThumb")
         .append(`<div class="thumbs"><img src="./images/projects/communityFounder/CF1.jpg"/></div>`)
         .append(`<div class="thumbs"><img src="./images/projects/communityFounder/CF2.jpg"/></div>`)
@@ -241,7 +242,7 @@ function info(funkName){
         case "5X5_THUMBNAIL_CC_Porch":
         $("#projectTitle h3").text("PORCH BREEZE");
         $("#projectClient p").text("Community Coffee Company, LLC");
-        $("#projectDeliverable p").text("IDENTITY / VISUAL LANGUAGE / BRAND ARCHITECTURE / PACKAGING SYSTEM");
+        $("#short").text("IDENTITY / VISUAL LANGUAGE / BRAND ARCHITECTURE / PACKAGING SYSTEM");
         $("#projectThumb")
         .append(`<div class="thumbs"><img src="./images/projects/comPorchBreeze/CPB1.jpg"/></div>`)
         .append(`<div class="thumbs"><img src="./images/projects/comPorchBreeze/CPB2.jpg"/></div>`)
@@ -251,7 +252,7 @@ function info(funkName){
         case "5X5_THUMBNAIL_CLUSTERS":
         $("#projectTitle h3").text("CRAISINS FRUIT CLUSTERS");
         $("#projectClient p").text("Ocean Spray Cranberries, Inc.");
-        $("#projectDeliverable p").text("IDENTITY / VISUAL LANGUAGE / BRAND ARCHITECTURE / PACKAGING SYSTEM / PHOTOGRAPHY ART DIRECTION / GRAPHIC STANDARDS");
+        $("#short").text("IDENTITY / VISUAL LANGUAGE / BRAND ARCHITECTURE / PACKAGING SYSTEM / PHOTOGRAPHY ART DIRECTION / GRAPHIC STANDARDS");
         $("#projectThumb")
         .append(`<div class="thumbs"><img src="./images/projects/OSCluster/cluster1.jpg"/></div>`)
         .append(`<div class="thumbs"><img src="./images/projects/OSCluster/cluster2.jpg"/></div>`)
@@ -259,7 +260,7 @@ function info(funkName){
         case "5X5_THUMBNAIL_COLD_BREW_KIT":
         $("#projectTitle h3").text("COMMUNITY COFFEE COLD BREW COFFEE KIT");
         $("#projectClient p").text("Community Coffee Company, LLC");
-        $("#projectDeliverable p").text("IDENTITY / VISUAL LANGUAGE / BRAND ARCHITECTURE / PACKAGING SYSTEM");
+        $("#short").text("IDENTITY / VISUAL LANGUAGE / BRAND ARCHITECTURE / PACKAGING SYSTEM");
         $("#projectThumb")
         .append(`<div class="thumbs"><img src="./images/projects/coldBrew/cold1.jpg"/></div>`)
         .append(`<div class="thumbs"><img src="./images/projects/coldBrew/cold2.jpg"/></div>`)
@@ -267,7 +268,7 @@ function info(funkName){
         case "5X5_THUMBNAIL_CRAISINS":
         $("#projectTitle h3").text("OCEAN SPRAY CRAISINS");
         $("#projectClient p").text("Ocean Spray Cranberries, Inc.");
-        $("#projectDeliverable p").text("IDENTITY / VISUAL LANGUAGE / BRAND ARCHITECTURE / PACKAGING SYSTEM / PHOTOGRAPHY ART DIRECTION / GRAPHIC STANDARDS");
+        $("#short").text("IDENTITY / VISUAL LANGUAGE / BRAND ARCHITECTURE / PACKAGING SYSTEM / PHOTOGRAPHY ART DIRECTION / GRAPHIC STANDARDS");
         $("#projectThumb")
         .append(`<div class="thumbs"><img src="./images/projects/craisins/craisins1.jpg"/></div>`)
         .append(`<div class="thumbs"><img src="./images/projects/craisins/craisins2.jpg"/></div>`)
@@ -277,17 +278,18 @@ function info(funkName){
         case "5X5_THUMBNAIL_Cheetos_Thumb":
         $("#projectTitle h3").text("CHEETOS FLAMIN' HOT DORITOS DINAMITA");
         $("#projectClient p").text("Frito-Lay, North America Inc.");
-        $("#projectDeliverable p").text("PRODUCTION STRATEGY / BRAND ARCHITECTURE / PACKAGING SYSTEM / DIGITAL ILLUSTRATION ART DIRECTION");
+        $("#short").text("PRODUCTION STRATEGY / BRAND ARCHITECTURE / PACKAGING SYSTEM / DIGITAL ILLUSTRATION ART DIRECTION");
         break;
         case "5X5_THUMBNAIL_Concept_pure_GREEN":
         $("#projectTitle h3").text("Dentyne Pure");
         $("#projectClient p").text("Dentyne");
-        $("#projectDeliverable p").text("Gum package concept");
+        $("#short").text("Gum package concept");
+        $("#long").text("WIne2w01e0re, waewawredreda twheardaeudnthineg tdaasuknotf ingathaeskrinogf gLaip tthoenr’isng80+ mLiapi tnosntr'se a8m0+temaaoi nffsetrienagms intetoa onffercio nhgessiinvteoporo neduccothleinseiv. e Tphroedruescutlltiineg. sTyhsetermesu coltninvgey ssystem tchoenbv eynsefithtseobf eenaecfihts unoifqeuaech purnoiqduectp, wrohdiluecmt, awxhimil eizminagx imizing common ellementts fforr ssuupeerrioi orr brand bllockiing on ssheelfl.f.")
         break;
         case "5X5_THUMBNAIL_DINAMITA_GREEN":
         $("#projectTitle h3").text("DORITOS DINAMITA");
         $("#projectClient p").text("Frito-Lay, North America Inc.");
-        $("#projectDeliverable p").text("PRODUCTION STRATEGY / LINE EXTENSION / BRAND ARCHITECTURE / PACKAGING SYSTEM / ILLUSTRATION ART DIRECTION");
+        $("#short").text("PRODUCTION STRATEGY / LINE EXTENSION / BRAND ARCHITECTURE / PACKAGING SYSTEM / ILLUSTRATION ART DIRECTION");
         $("#projectThumb")
         .append(`<div class="thumbs"><img src="./images/thumbnail/5X5_THUMBNAIL_DINAMITA_Purple.jpg"/></div>`)
         .append(`<div class="thumbs"><img src="./images/projects/dinamita/dinamita1.jpg"/></div>`)
@@ -298,19 +300,19 @@ function info(funkName){
         case "5X5_THUMBNAIL_Doritos_Loaded":
         $("#projectTitle h3").text("DORITOS LOADED");
         $("#projectClient p").text("Frito-Lay, North America Inc.");
-        $("#projectDeliverable p").text("PRODUCTION STRATEGY / LINE EXTENSION / BRAND ARCHITECTURE / PACKAGING SYSTEM / PHOTO ART DIRECTION");
+        $("#short").text("PRODUCTION STRATEGY / LINE EXTENSION / BRAND ARCHITECTURE / PACKAGING SYSTEM / PHOTO ART DIRECTION");
         $("#projectThumb")
         .append(`<div class="thumbs"><img src="./images/projects/loaded/loaded1.jpg"/></div>`)
         break;
         case "5X5_THUMBNAIL_Farmers_Thumb":
         $("#projectTitle h3").text("OCEAN SPRAY FARMERS LOGO");
         $("#projectClient p").text("Ocean Spray Cranberries, Inc.");
-        $("#projectDeliverable p").text("LOGOMARK / PACKAGING SYSTEM / VISUAL LANGUAGE / GRAPHIC STANDARDS");
+        $("#short").text("LOGOMARK / PACKAGING SYSTEM / VISUAL LANGUAGE / GRAPHIC STANDARDS");
         break;
         case "5X5_THUMBNAIL_Friendlys_Duo":
         $("#projectTitle h3").text("FRIENDLY'S DESSERT CUPS");
         $("#projectClient p").text("Friendly’s");
-        $("#projectDeliverable p").text("PACKAGING SYSTEM / ILLUSTRATION / BRAND ARCHITECTURE");
+        $("#short").text("PACKAGING SYSTEM / ILLUSTRATION / BRAND ARCHITECTURE");
         $("#projectThumb")
         .append(`<div class="thumbs"><img src="./images/projects/friendlys/friend1.jpg"/></div>`)
         .append(`<div class="thumbs"><img src="./images/projects/friendlys/friend2.jpg"/></div>`)
@@ -318,14 +320,14 @@ function info(funkName){
         case "5X5_THUMBNAIL_GNC_Earth_Genius":
         $("#projectTitle h3").text("GNC EARTH GENIUS");
         $("#projectClient p").text("GNC");
-        $("#projectDeliverable p").text("IDENTITY / VISUAL LANGUAGE / BRAND ARCHITECTURE / PACKAGING SYSTEM / ART DIRECTION IN COLLABORATION WITH GNC");
+        $("#short").text("IDENTITY / VISUAL LANGUAGE / BRAND ARCHITECTURE / PACKAGING SYSTEM / ART DIRECTION IN COLLABORATION WITH GNC");
         $("#projectThumb")
         .append(`<div class="thumbs"><img src="./images/projects/earthGenius/genius.jpg"/></div>`)
         break;
         case "5X5_THUMBNAIL_Greg_Loiacono_2":
         $("#projectTitle h3").text("GREG LOIACONO");
         $("#projectClient p").text("Greg Loiacono");
-        $("#projectDeliverable p").text("IDENTITY / VISUAL LANGUAGE / PACKAGING SYSTEM / ILLUSTRATION / PRODUCTION STRATEGY");
+        $("#short").text("IDENTITY / VISUAL LANGUAGE / PACKAGING SYSTEM / ILLUSTRATION / PRODUCTION STRATEGY");
         $("#projectThumb")
         .append(`<div class="thumbs"><img src="./images/projects/loiacono/loia1.jpg"/></div>`)
         .append(`<div class="thumbs"><img src="./images/projects/loiacono/loia2.jpg"/></div>`)
@@ -334,7 +336,7 @@ function info(funkName){
         case "5X5_THUMBNAIL_Indulgences":
         $("#projectTitle h3").text("SMARTFOOD INDULGENCES");
         $("#projectClient p").text("Smartfood, Inc.");
-        $("#projectDeliverable p").text("IDENTITY / VISUAL LANGUAGE / BRAND ARCHITECTURE / PACKAGING SYSTEM /  ILLUSTRATION / ART DIRECTION");
+        $("#short").text("IDENTITY / VISUAL LANGUAGE / BRAND ARCHITECTURE / PACKAGING SYSTEM /  ILLUSTRATION / ART DIRECTION");
         $("#projectThumb")
         .append(`<div class="thumbs"><img src="./images/projects/indulgences/indulge1.jpg"/></div>`)
         .append(`<div class="thumbs"><img src="./images/projects/indulgences/indulge2.jpg"/></div>`)
@@ -342,7 +344,7 @@ function info(funkName){
         case "5X5_THUMBNAIL_KOOBA":
         $("#projectTitle h3").text("KOOBA TARGET GAME");
         $("#projectClient p").text("InPlay");
-        $("#projectDeliverable p").text("VISUAL LANGUAGE / BRAND ARCHITECTURE / PACKAGING SYSTEM / ILLUSTRATION / GRAPHIC STANDARDS");
+        $("#short").text("VISUAL LANGUAGE / BRAND ARCHITECTURE / PACKAGING SYSTEM / ILLUSTRATION / GRAPHIC STANDARDS");
         $("#projectThumb")
         .append(`<div class="thumbs"><img src="./images/projects/kooba/kooba1.jpg"/></div>`)
         .append(`<div class="thumbs"><img src="./images/projects/kooba/kooba2.jpg"/></div>`)
@@ -351,7 +353,7 @@ function info(funkName){
         case "5X5_THUMBNAIL_Krusteaz":
         $("#projectTitle h3").text("KRUSTEAZ");
         $("#projectClient p").text("Continental Mills, Inc.");
-        $("#projectDeliverable p").text("IDENTITY / VISUAL LANGUAGE / BRAND ARCHITECTURE / PACKAGING SYSTEM / PHOTOGRAPHY ART DIRECTION / ILLUSTRATION ART DIRECTION");
+        $("#short").text("IDENTITY / VISUAL LANGUAGE / BRAND ARCHITECTURE / PACKAGING SYSTEM / PHOTOGRAPHY ART DIRECTION / ILLUSTRATION ART DIRECTION");
         $("#projectThumb")
         .append(`<div class="thumbs"><img src="./images/projects/krusteaz/krust1.jpg"/></div>`)
         .append(`<div class="thumbs"><img src="./images/projects/krusteaz/krust2.jpg"/></div>`)
@@ -360,7 +362,7 @@ function info(funkName){
         case "5X5_THUMBNAIL_LAYERS":
         $("#projectTitle h3").text("TRIDENT LAYERS");
         $("#projectClient p").text("Kraft Foods");
-        $("#projectDeliverable p").text("IDENTITY / VISUAL LANGUAGE / BRAND ARCHITECTURE / PACKAGING SYSTEM / ILLUSTRATION ART DIRECTION / GRAPHIC STANDARDS");
+        $("#short").text("IDENTITY / VISUAL LANGUAGE / BRAND ARCHITECTURE / PACKAGING SYSTEM / ILLUSTRATION ART DIRECTION / GRAPHIC STANDARDS");
         $("#projectThumb")
         .append(`<div class="thumbs"><img src="./images/projects/layers/layer1.jpg"/></div>`)
         .append(`<div class="thumbs"><img src="./images/projects/layers/layer2.jpg"/></div>`)
@@ -369,7 +371,7 @@ function info(funkName){
         case "5X5_THUMBNAIL_LINDSAYPEPPERS":
         $("#projectTitle h3").text("LINDSAY PEPPERS");
         $("#projectClient p").text("Bell-Carter Foods, Inc.");
-        $("#projectDeliverable p").text("IDENTITY / VISUAL LANGUAGE / BRAND ARCHITECTURE / PACKAGING SYSTEM / ILLUSTRATION");
+        $("#short").text("IDENTITY / VISUAL LANGUAGE / BRAND ARCHITECTURE / PACKAGING SYSTEM / ILLUSTRATION");
         $("#projectThumb")
         .append(`<div class="thumbs"><img src="./images/projects/lindsay/lindsay1.jpg"/></div>`)
         .append(`<div class="thumbs"><img src="./images/projects/lindsay/lindsay2.jpg"/></div>`)
@@ -377,7 +379,7 @@ function info(funkName){
         case "5X5_THUMBNAIL_LINDSAY_OIL":
         $("#projectTitle h3").text("LINDSAY NATURALS");
         $("#projectClient p").text("Bell-Carter Foods, Inc.");
-        $("#projectDeliverable p").text("IDENTITY / VISUAL LANGUAGE / BRAND ARCHITECTURE / PACKAGING SYSTEM / ILLUSTRATION ");
+        $("#short").text("IDENTITY / VISUAL LANGUAGE / BRAND ARCHITECTURE / PACKAGING SYSTEM / ILLUSTRATION ");
         $("#projectThumb")
         .append(`<div class="thumbs"><img src="./images/projects/lindsayOil/oil1.jpg"/></div>`)
         .append(`<div class="thumbs"><img src="./images/projects/lindsayOil/oil2.jpg"/></div>`)
@@ -385,7 +387,7 @@ function info(funkName){
         case "5X5_THUMBNAIL_Lindsay_Almond_Butter":
         $("#projectTitle h3").text("LINDSAY ALMOND BUTTER");
         $("#projectClient p").text("Bell-Carter Foods, Inc.");
-        $("#projectDeliverable p").text("IDENTITY / VISUAL LANGUAGE / BRAND ARCHITECTURE / LINE EXTENSION / PACKAGING SYSTEM / ILLUSTRATION ");
+        $("#short").text("IDENTITY / VISUAL LANGUAGE / BRAND ARCHITECTURE / LINE EXTENSION / PACKAGING SYSTEM / ILLUSTRATION ");
         $("#projectThumb")
         .append(`<div class="thumbs"><img src="./images/projects/lindsayAlmonds/butter1.jpg"/></div>`)
         .append(`<div class="thumbs"><img src="./images/projects/lindsayAlmonds/butter2.jpg"/></div>`)
@@ -394,7 +396,7 @@ function info(funkName){
         case "5X5_THUMBNAIL_Lindsay_Infusions":
         $("#projectTitle h3").text("LINDSAY INFUSIONS");
         $("#projectClient p").text("Bell-Carter Foods, Inc.");
-        $("#projectDeliverable p").text("IDENTITY / VISUAL LANGUAGE / BRAND ARCHITECTURE / LINE EXTENSION / PACKAGING SYSTEM / ILLUSTRATION ");
+        $("#short").text("IDENTITY / VISUAL LANGUAGE / BRAND ARCHITECTURE / LINE EXTENSION / PACKAGING SYSTEM / ILLUSTRATION ");
         $("#projectThumb")
         .append(`<div class="thumbs"><img src="./images/projects/infusions/infuse1.jpg"/></div>`)
         .append(`<div class="thumbs"><img src="./images/projects/infusions/infuse2.jpg"/></div>`)
@@ -403,7 +405,7 @@ function info(funkName){
         case "5X5_THUMBNAIL_Lindsay_Olive_Oil":
         $("#projectTitle h3").text("LINDSAY OLIVE OIL");
         $("#projectClient p").text("Bell-Carter Foods, Inc.");
-        $("#projectDeliverable p").text("IDENTITY / VISUAL LANGUAGE / BRAND ARCHITECTURE / LINE EXTENSION / PACKAGING SYSTEM");
+        $("#short").text("IDENTITY / VISUAL LANGUAGE / BRAND ARCHITECTURE / LINE EXTENSION / PACKAGING SYSTEM");
         $("#projectThumb")
         .append(`<div class="thumbs"><img src="./images/projects/oliveoil/oliveoil1.jpg"/></div>`)
         .append(`<div class="thumbs"><img src="./images/projects/oliveoil/oliveoil2.jpg"/></div>`)
@@ -411,7 +413,7 @@ function info(funkName){
         case "5X5_THUMBNAIL_NEXXUS":
         $("#projectTitle h3").text("NEXXUS STYLE GUIDE");
         $("#projectClient p").text("Unilever North America");
-        $("#projectDeliverable p").text("VISUAL LANGUAGE / GRAPHIC STANDARDS");
+        $("#short").text("VISUAL LANGUAGE / GRAPHIC STANDARDS");
         $("#projectThumb")
         .append(`<div class="thumbs"><img src="./images/projects/nexxus/nex1.jpg"/></div>`)
         .append(`<div class="thumbs"><img src="./images/projects/nexxus/nex2.jpg"/></div>`)
@@ -420,7 +422,7 @@ function info(funkName){
         case "5X5_THUMBNAIL_NRC_CHAMPION_New":
         $("#projectTitle h3").text("CHAMPION");
         $("#projectClient p").text("National Raisin Company");
-        $("#projectDeliverable p").text("IDENTITY / VISUAL LANGUAGE / PACKAGING SYSTEM / BRAND ARCHITECTURE / ILLUSTRATION / PRODUCTION STRATEGY");
+        $("#short").text("IDENTITY / VISUAL LANGUAGE / PACKAGING SYSTEM / BRAND ARCHITECTURE / ILLUSTRATION / PRODUCTION STRATEGY");
         $("#projectThumb")
         .append(`<div class="thumbs"><img src="./images/projects/champion/champ1.jpg"/></div>`)
         .append(`<div class="thumbs"><img src="./images/projects/champion/champ2.jpg"/></div>`)
@@ -430,7 +432,7 @@ function info(funkName){
         case "5X5_THUMBNAIL_NRC_RAISELS_2":
         $("#projectTitle h3").text("RAISELS");
         $("#projectClient p").text("National Raisin Company");
-        $("#projectDeliverable p").text("IDENTITY / VISUAL LANGUAGE / PACKAGING SYSTEM / BRAND ARCHITECTURE / PRODUCTION STRATEGY");
+        $("#short").text("IDENTITY / VISUAL LANGUAGE / PACKAGING SYSTEM / BRAND ARCHITECTURE / PRODUCTION STRATEGY");
         $("#projectThumb")
         .append(`<div class="thumbs"><img src="./images/projects/raisels/rais1.jpg"/></div>`)
         .append(`<div class="thumbs"><img src="./images/projects/raisels/rais2.jpg"/></div>`)
@@ -441,7 +443,7 @@ function info(funkName){
         case "5X5_THUMBNAIL_OS_Cran_Amazing_Orange":
         $("#projectTitle h3").text("OCEAN SPRAY CRAN AMAZING");
         $("#projectClient p").text("Ocean Spray Cranberries, Inc.");
-        $("#projectDeliverable p").text("IDENTITY / VISUAL LANGUAGE / BRAND ARCHITECTURE / PACKAGING SYSTEM / ILLUSTRATION ART DIRECTION / GRAPHIC STANDARDS");
+        $("#short").text("IDENTITY / VISUAL LANGUAGE / BRAND ARCHITECTURE / PACKAGING SYSTEM / ILLUSTRATION ART DIRECTION / GRAPHIC STANDARDS");
         $("#projectThumb")
         .append(`<div class="thumbs"><img src="./images/projects/cranAmaze/1.jpg"/></div>`)
         .append(`<div class="thumbs"><img src="./images/projects/cranAmaze/2.jpg"/></div>`)
@@ -451,7 +453,7 @@ function info(funkName){
         case "5X5_THUMBNAIL_OS_Cran_America":
         $("#projectTitle h3").text("OCEAN SPRAY CRAN AMERICA");
         $("#projectClient p").text("Ocean Spray Cranberries, Inc.");
-        $("#projectDeliverable p").text("VISUAL LANGUAGE / BRAND ARCHITECTURE / PACKAGING SYSTEM / ILLUSTRATION");
+        $("#short").text("VISUAL LANGUAGE / BRAND ARCHITECTURE / PACKAGING SYSTEM / ILLUSTRATION");
         $("#projectThumb")
         .append(`<div class="thumbs"><img src="./images/projects/cranAmerica/1.jpg"/></div>`)
         .append(`<div class="thumbs"><img src="./images/projects/cranAmerica/2.jpg"/></div>`)
@@ -461,7 +463,7 @@ function info(funkName){
         case "5X5_THUMBNAIL_OS_Organic":
         $("#projectTitle h3").text("100% ORGANIC & PURE");
         $("#projectClient p").text("Ocean Spray Cranberries, Inc.");
-        $("#projectDeliverable p").text("IDENTITY / VISUAL LANGUAGE / BRAND ARCHITECTURE / PACKAGING SYSTEM / PHOTOGRAPHY ART DIRECTION / GRAPHIC STANDARDS");
+        $("#short").text("IDENTITY / VISUAL LANGUAGE / BRAND ARCHITECTURE / PACKAGING SYSTEM / PHOTOGRAPHY ART DIRECTION / GRAPHIC STANDARDS");
         $("#projectThumb")
         .append(`<div class="thumbs"><img src="./images/projects/osPure/1.jpg"/></div>`)
         .append(`<div class="thumbs"><img src="./images/projects/osPure/2.jpg"/></div>`)
@@ -469,7 +471,7 @@ function info(funkName){
         case "5X5_THUMBNAIL_POM":
         $("#projectTitle h3").text("TRIDENT VITALITY");
         $("#projectClient p").text("Kraft Foods");
-        $("#projectDeliverable p").text("IDENTITY / VISUAL LANGUAGE / BRAND ARCHITECTURE / PACKAGING SYSTEM / ILLUSTRATION ART DIRECTION / GRAPHIC STANDARDS");
+        $("#short").text("IDENTITY / VISUAL LANGUAGE / BRAND ARCHITECTURE / PACKAGING SYSTEM / ILLUSTRATION ART DIRECTION / GRAPHIC STANDARDS");
         $("#projectThumb")
         .append(`<div class="thumbs"><img src="./images/projects/vitality/1.jpg"/></div>`)
         .append(`<div class="thumbs"><img src="./images/projects/vitality/2.jpg"/></div>`)
@@ -481,7 +483,7 @@ function info(funkName){
         case "5X5_THUMBNAIL_POPS":
         $("#projectTitle h3").text("LAY'S AIR POPS");
         $("#projectClient p").text("Frito-Lay, North America Inc.");
-        $("#projectDeliverable p").text("IDENTITY / VISUAL LANGUAGE / BRAND ARCHITECTURE / PACKAGING SYSTEM / ART DIRECTION");
+        $("#short").text("IDENTITY / VISUAL LANGUAGE / BRAND ARCHITECTURE / PACKAGING SYSTEM / ART DIRECTION");
         $("#projectThumb")
         .append(`<div class="thumbs"><img src="./images/projects/airpop/1.jpg"/></div>`)
         .append(`<div class="thumbs"><img src="./images/projects/airpop/2.jpg"/></div>`)
@@ -490,7 +492,7 @@ function info(funkName){
         case "5X5_THUMBNAIL_REDBAG":
         $("#projectTitle h3").text("COMMUNITY COFFEE");
         $("#projectClient p").text("Community Coffee Company, LLC");
-        $("#projectDeliverable p").text("IDENTITY / VISUAL LANGUAGE / BRAND ARCHITECTURE / PACKAGING SYSTEM / ILLUSTRATION ART DIRECTION / GRAPHIC STANDARDS");
+        $("#short").text("IDENTITY / VISUAL LANGUAGE / BRAND ARCHITECTURE / PACKAGING SYSTEM / ILLUSTRATION ART DIRECTION / GRAPHIC STANDARDS");
         $("#projectThumb")
         .append(`<div class="thumbs"><img src="./images/projects/community/1.jpg"/></div>`)
         .append(`<div class="thumbs"><img src="./images/projects/community/2.jpg"/></div>`)
@@ -502,7 +504,7 @@ function info(funkName){
         case "5X5_THUMBNAIL_SMURFS":
         $("#projectTitle h3").text("SUAVE KIDS SMURFS");
         $("#projectClient p").text("Unilever North America");
-        $("#projectDeliverable p").text("VISUAL LANGUAGE / BRAND ARCHITECTURE / PACKAGING SYSTEM / ILLUSTRATION DEVELOPMENT / ART DIRECTION");
+        $("#short").text("VISUAL LANGUAGE / BRAND ARCHITECTURE / PACKAGING SYSTEM / ILLUSTRATION DEVELOPMENT / ART DIRECTION");
         $("#projectThumb")
         .append(`<div class="thumbs"><img src="./images/projects/smurfs/1.jpg"/></div>`)
         .append(`<div class="thumbs"><img src="./images/projects/smurfs/2.jpg"/></div>`)
@@ -513,7 +515,7 @@ function info(funkName){
         case "5X5_THUMBNAIL_SPARKLING":
         $("#projectTitle h3").text("OCEAN SPRAY SPARKLING");
         $("#projectClient p").text("Ocean Spray Cranberries, Inc.");
-        $("#projectDeliverable p").text("IDENTITY / VISUAL LANGUAGE / BRAND ARCHITECTURE / PACKAGING SYSTEM / ILLUSTRATION ART DIRECTION / GRAPHIC STANDARDS");
+        $("#short").text("IDENTITY / VISUAL LANGUAGE / BRAND ARCHITECTURE / PACKAGING SYSTEM / ILLUSTRATION ART DIRECTION / GRAPHIC STANDARDS");
         $("#projectThumb")
         .append(`<div class="thumbs"><img src="./images/projects/sparkle/1.jpg"/></div>`)
         .append(`<div class="thumbs"><img src="./images/projects/sparkle/2.jpg"/></div>`)
@@ -521,7 +523,7 @@ function info(funkName){
         case "5X5_THUMBNAIL_SUAVEKIDS":
         $("#projectTitle h3").text("SUAVE KIDS HAIR CARE");
         $("#projectClient p").text("Unilever North America");
-        $("#projectDeliverable p").text("VISUAL LANGUAGE / BRAND ARCHITECTURE / PACKAGING SYSTEM / ILLUSTRATION DEVELOPMENT / ART DIRECTION ");
+        $("#short").text("VISUAL LANGUAGE / BRAND ARCHITECTURE / PACKAGING SYSTEM / ILLUSTRATION DEVELOPMENT / ART DIRECTION ");
         $("#projectThumb")
         .append(`<div class="thumbs"><img src="./images/projects/suavekids/1.jpg"/></div>`)
         .append(`<div class="thumbs"><img src="./images/projects/suavekids/2.jpg"/></div>`)
@@ -530,7 +532,7 @@ function info(funkName){
         case "5X5_THUMBNAIL_SUAVE_DEO":
         $("#projectTitle h3").text("SUAVE DEODORANT");
         $("#projectClient p").text("Unilever North America");
-        $("#projectDeliverable p").text("VISUAL LANGUAGE / BRAND ARCHITECTURE / PACKAGING SYSTEM / ILLUSTRATION DEVELOPMENT / ART DIRECTION ");
+        $("#short").text("VISUAL LANGUAGE / BRAND ARCHITECTURE / PACKAGING SYSTEM / ILLUSTRATION DEVELOPMENT / ART DIRECTION ");
         $("#projectThumb")
         .append(`<div class="thumbs"><img src="./images/projects/deodorant/1.jpg"/></div>`)
         .append(`<div class="thumbs"><img src="./images/projects/deodorant/2.jpg"/></div>`)
@@ -539,7 +541,7 @@ function info(funkName){
         case "5X5_THUMBNAIL_Suave_Bodywash_Lotion":
         $("#projectTitle h3").text("SUAVE BODY WASH");
         $("#projectClient p").text("Unilever North America");
-        $("#projectDeliverable p").text("VISUAL LANGUAGE / BRAND ARCHITECTURE / PACKAGING SYSTEM / ILLUSTRATION / GRAPHIC STANDARDS");
+        $("#short").text("VISUAL LANGUAGE / BRAND ARCHITECTURE / PACKAGING SYSTEM / ILLUSTRATION / GRAPHIC STANDARDS");
         $("#projectThumb")
         .append(`<div class="thumbs"><img src="./images/projects/bodywash/1.jpg"/></div>`)
         .append(`<div class="thumbs"><img src="./images/projects/bodywash/2.jpg"/></div>`)
@@ -547,14 +549,14 @@ function info(funkName){
         case "5X5_THUMBNAIL_Suavemen":
         $("#projectTitle h3").text("SUAVE MEN HERITAGE EDITION");
         $("#projectClient p").text("Unilever");
-        $("#projectDeliverable p").text("U.S PRODUCT ROLL-OUT / ARCHITECTURE / PRODUCTION STRATEGY / LINE EXTENSION ");
+        $("#short").text("U.S PRODUCT ROLL-OUT / ARCHITECTURE / PRODUCTION STRATEGY / LINE EXTENSION ");
         $("#projectThumb")
         .append(`<div class="thumbs"><img src="./images/projects/suavemen/1.jpg"/></div>`)
         break;
         case "5X5_THUMBNAIL_Top_N_Go":
         $("#projectTitle h3").text("FRITO LAY TOP N GO");
         $("#projectClient p").text("Frito Lay North America, Inc");
-        $("#projectDeliverable p").text("IDENTITY / VISUAL LANGUAGE / BRAND ARCHITECTURE / PACKAGING SYSTEM / PHOTOGRAPHY ART DIRECTION ");
+        $("#short").text("IDENTITY / VISUAL LANGUAGE / BRAND ARCHITECTURE / PACKAGING SYSTEM / PHOTOGRAPHY ART DIRECTION ");
         $("#projectThumb")
         .append(`<div class="thumbs"><img src="./images/projects/topngo/1.jpg"/></div>`)
         .append(`<div class="thumbs"><img src="./images/projects/topngo/2.jpg"/></div>`)
@@ -563,7 +565,7 @@ function info(funkName){
         case "5X5_THUMBNAIL_VALERIE":
         $("#projectTitle h3").text("");
         $("#projectClient p").text("");
-        $("#projectDeliverable p").text("");
+        $("#short").text("");
         $("#projectThumb")
         .append(`<div class="thumbs"><img src="./images/projects/valerie/1.jpg"/></div>`)
         .append(`<div class="thumbs"><img src="./images/projects/valerie/2.jpg"/></div>`)
@@ -575,7 +577,7 @@ function info(funkName){
         case "5X5_hair":
         $("#projectTitle h3").text("SUAVE HAIR INNOVATIONS");
         $("#projectClient p").text("Unilever North America");
-        $("#projectDeliverable p").text("VISUAL LANGUAGE / SALES COLLATERAL / PRINT STRATEGY ");
+        $("#short").text("VISUAL LANGUAGE / SALES COLLATERAL / PRINT STRATEGY ");
         $("#projectThumb")
         .append(`<div class="thumbs"><img src="./images/projects/hair/1.jpg"/></div>`)
         .append(`<div class="thumbs"><img src="./images/projects/hair/2.jpg"/></div>`)

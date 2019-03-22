@@ -377,6 +377,10 @@ modal{
     margin: 0;
 }
 
+#description p{
+    padding-top: 1em;
+}
+
 #videosNav {
     z-index: 1;
     position: initial;
