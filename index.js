@@ -222,6 +222,7 @@ function info(funkName){
         $("#projectTitle h3").text("OCEAN SPRAY 100% JUICE");
         $("#projectClient p").text("Ocean Spray Cranberries, Inc.");
         $("#short").text("IDENTITY / VISUAL LANGUAGE / BRAND ARCHITECTURE / PACKAGING SYSTEM / PHOTOGRAPHY ART DIRECTION / GRAPHIC STANDARDS");
+        $("#long").text("Objectives: Redesign of Ocean Spray’s 100% Juice Line. Reposition line as a more premium offering in a bid to take market share competing shelf stable, chilled, and refrigerated juices.Scope: 30 SKUs from concept through delivery of final mechanical files. ")
         $("#projectThumb")
         .append(`<div class="thumbs"><img src="./images/projects/oceanSprayJuice/OSJ1.jpg"/></div>`)
         .append(`<div class="thumbs"><img src="./images/projects/oceanSprayJuice/OSJ2.jpg"/></div>`)
@@ -284,7 +285,6 @@ function info(funkName){
         $("#projectTitle h3").text("Dentyne Pure");
         $("#projectClient p").text("Dentyne");
         $("#short").text("Gum package concept");
-        $("#long").text("WIne2w01e0re, waewawredreda twheardaeudnthineg tdaasuknotf ingathaeskrinogf gLaip tthoenr’isng80+ mLiapi tnosntr'se a8m0+temaaoi nffsetrienagms intetoa onffercio nhgessiinvteoporo neduccothleinseiv. e Tphroedruescutlltiineg. sTyhsetermesu coltninvgey ssystem tchoenbv eynsefithtseobf eenaecfihts unoifqeuaech purnoiqduectp, wrohdiluecmt, awxhimil eizminagx imizing common ellementts fforr ssuupeerrioi orr brand bllockiing on ssheelfl.f.")
         break;
         case "5X5_THUMBNAIL_DINAMITA_GREEN":
         $("#projectTitle h3").text("DORITOS DINAMITA");
