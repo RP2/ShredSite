@@ -239,15 +239,15 @@ modal{
     margin: 0;
 }
 
-#map {
-    padding: 1em;
-    padding-left: 4em;
-    padding-right: 4em;
+#clients {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-#clients {
-    padding-left: 4em;
-    padding-right: 4em;
+.clientImg{
+    padding: 1em;
+    max-width: 7em;
 }
 
 #workThumbs {
@@ -409,6 +409,17 @@ modal{
     justify-content: center;
     margin: 1em;
 }
+#map{
+    padding-left: 0;
+    padding-right: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.mapImg{
+    max-width: 30em;
+}
 
 blog div{
     padding: 1em;
@@ -453,10 +464,6 @@ blog div{
     }
     #projectDesc {
         flex-direction: column
-    }
-    #map{
-        padding-left: 0;
-        padding-right: 0;
     }
     blog div{
         padding: 0em;
