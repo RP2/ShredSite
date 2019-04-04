@@ -175,7 +175,7 @@ a {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-#coffee {
+#cran {
     position: absolute;
     top: 0;
     left: 0;
@@ -277,6 +277,15 @@ modal{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+#people {
+    
+}
+
+.pepContain{
+    display: none;
+    width: 100vw;
 }
 
 .workDetail {
@@ -474,12 +483,15 @@ blog div{
 }
 
 @media screen and (max-width: 575px){
+    #capList{
+        opacity: .75;
+    }
+}
+
+@media screen and (max-width: 505px){
     #contactMap {
         position: fixed;
         bottom: 0;
-    }
-    #capList{
-        opacity: .75;
     }
 }
 

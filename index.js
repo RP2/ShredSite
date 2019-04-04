@@ -27,7 +27,7 @@ $("a").on('click', function(event) {
     }
   });
   $("#land1").on("click", function(e){
-    let video = $("#coffee");
+    let video = $("#cran");
       if(video[0].muted){
           video[0].muted = false;
       }
@@ -84,7 +84,7 @@ $(document).ready(function() {
 });
 
 $(window).scroll(function() {
-    let video = $("#coffee");
+    let video = $("#cran");
     if ($(window).scrollTop() > $("#land1").outerHeight()){
         video[0].muted = true;
         video[0].pause();
