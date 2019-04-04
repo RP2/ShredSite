@@ -630,4 +630,13 @@ function animate(){
         scrollTop: $("#landingSlides").outerHeight() + 5 + "px"}, 1000, "swing");
     $("#project").stop().css("position", "absolute").fadeIn(1000).css("display", "flex");
     $("#mobileNav").stop().fadeOut();
+    if ($("#project").css("display") == "flex"){
+        $(window).resize(function(){
+            let projectHeight = $("nav").height() + $("#project").height(); 
+            let VH = $(window).height();
+            if (projectHeight > VH) {
+                $("#work").stop().animate({marginTop: projectHeight + "px"}, 500);
+            };
+        })
+    }
 }
