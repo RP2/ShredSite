@@ -160,9 +160,13 @@ a {
 #land5 {
     background-image: url("../images/landing/COVER_CommunityCoffee.jpg");
 }
+#land6 {
+    background-image: url("../images/landing/Cover_Three_Amigos.jpg");
+}
 
-#land1 img {
-    width: 25%;
+#shredLogo {
+    max-width: 20%;
+    min-width: 10em;
 }
 .banner {
     z-index: -1;
@@ -183,7 +187,7 @@ a {
     height: 100%;
 }
 
-#about {
+.textBlock{
     background-color: #012d5e;
     color: white;
     display: flex;
@@ -277,10 +281,6 @@ modal{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
-
-#people {
-    
 }
 
 .pepContain{
@@ -380,6 +380,14 @@ modal{
     padding: 1em;
 }
 
+.thumbs img{
+    transition: .2s;
+}
+
+.thumbs img:hover{
+    transform: scale(1.025);
+}
+
 #projectClient, #projectDeliverable {
     padding-top: 1em;
 }
@@ -427,7 +435,7 @@ modal{
     flex-wrap: wrap;
 }
 .mapImg{
-    max-width: 30em;
+    max-width: 35em;
 }
 
 blog div{
