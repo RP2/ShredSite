@@ -283,6 +283,23 @@ modal{
     justify-content: center;
 }
 
+#bigPeople{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #012d5e;
+    color: white;
+}
+
+.person{
+    padding: 1em;
+}
+
+.person h1, .person p{
+    text-align: inherit;
+    padding: 0;
+}
+
 .pepContain{
     display: none;
     width: 100vw;
@@ -493,13 +510,6 @@ blog div{
 @media screen and (max-width: 575px){
     #capList{
         opacity: .75;
-    }
-}
-
-@media screen and (max-width: 505px){
-    #contactMap {
-        position: fixed;
-        bottom: 0;
     }
 }
 
