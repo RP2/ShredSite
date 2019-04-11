@@ -59,7 +59,7 @@ $(document).ready(function() {
         }
         $("#projectLeft img").attr("src", this.src)
         $("#loading").css("display", "flex")
-        $("#workThumbs").stop().animate({marginTop: $("#loading").height() + "px"}, 250);
+        $("#work").stop().animate({marginTop: $("#loading").height() + "px"}, 250);
         info(this)
         $("#projectThumb img").click(function(){
             $("#projectLeft img").attr("src", this.src)
@@ -71,7 +71,6 @@ $(document).ready(function() {
     $("#close h2").click(function(){
         $("modal").fadeOut(200)
         $("#project").fadeOut(500);
-        $("#workThumbs").animate({marginTop: "0px"}, 1000);
         $("#work").animate({marginTop: "0px"}, 1000);
     });
 
@@ -633,7 +632,6 @@ function animate(){
         scrollTop: $("#landingSlides").outerHeight() + 5 + "px"}, 1000, "swing");
     $("#project").stop().css("position", "absolute").fadeIn(1000).css("display", "flex");
     $("#loading").css("display", "none")
-    $("#workThumbs").animate({marginTop: "0px"}, 1000);
     $("#mobileNav").stop().fadeOut();
     if ($("#project").css("display") == "flex"){
         $(window).resize(function(){
