@@ -283,6 +283,27 @@ modal{
     max-width: 7em;
 }
 
+#loading{
+    width: 100vw;
+    display: none;
+    justify-content: center;
+    position: absolute;
+}
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #000000;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  } 
+
 #workThumbs {
     display: flex;
     flex-wrap: wrap;
@@ -478,15 +499,23 @@ modal{
     margin: 1em;
 }
 #map{
-    padding-left: 0;
-    padding-right: 0;
+    padding: 1em;
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+    color: grey;
 }
 .mapImg{
-    max-width: 35em;
+    max-width: 25em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 2em;
+}
+
+.mapImg p{
+    margin: 0;
 }
 
 blog div{
