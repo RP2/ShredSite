@@ -116,7 +116,7 @@ a {
 }
 
 .landingImages {
-    height: 50vh;
+    height: 75vh;
     background-attachment: fixed;
     background-position: right;
     background-repeat: no-repeat;
@@ -195,7 +195,7 @@ a {
 }
 
 .paragraph {
-    max-width: 30em;
+    max-width: 40em;
     padding: 1em;
     letter-spacing: .1em
 }
@@ -209,6 +209,35 @@ modal{
     width: 100vw;
     height: 100vh;
     background-color: white;
+}
+
+#about{
+    font-size: 1.25em;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#about p {
+    margin: 0;
+    line-height: 2em;
+}
+
+#process{
+    font-size: 1.25em;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#process p{
+    margin: 0;
+    line-height: 2em;
+}
+
+#capable{
+    font-size: 1.25em;
+    text-align: center;
 }
 
 #modalContain{
@@ -233,13 +262,12 @@ modal{
 #capList {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
-    max-width: 30em;
 }
 
 #capList ul {
-    padding-bottom: 1em;
+    padding: 1em;
     margin: 0;
 }
 
@@ -298,6 +326,11 @@ modal{
 .person h1, .person p{
     text-align: inherit;
     padding: 0;
+    max-width: 25em;
+}
+
+.person p{
+    font-size: .75em;
 }
 
 .pepContain{
@@ -504,12 +537,6 @@ blog div{
     }
     blog {
         padding: 1em;
-    }
-}
-
-@media screen and (max-width: 575px){
-    #capList{
-        opacity: .75;
     }
 }
 
