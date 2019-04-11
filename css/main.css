@@ -264,6 +264,7 @@ modal{
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+    font-size: .8em;
 }
 
 #capList ul {
