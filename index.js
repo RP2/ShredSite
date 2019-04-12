@@ -1,19 +1,3 @@
-// let landingIndex = 0;
-// carousel();
-
-// function carousel(){
-//     let slides = document.getElementsByClassName("landingImages");
-//     for (let i = 0; i < slides.length; i++){
-//         // slides[i].style.display = "none";
-//         $(slides[i]).fadeOut();
-//     }
-//     landingIndex++;
-//     if (landingIndex > slides.length) {landingIndex = 1}
-//     // slides[landingIndex-1].style.display = "block";
-//     $(slides[landingIndex-1]).fadeIn();
-//     setTimeout(carousel, 3000)
-// }
-
 // slide nav
 $("a").on('click', function(event) {
     if (this.hash !== "") {
