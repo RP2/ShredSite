@@ -570,6 +570,38 @@ function info(funkName){
         .append(`<div class="thumbs"><img src="./images/projects/hair/3.jpg"/></div>`)
         .append(`<div class="thumbs"><img src="./images/projects/hair/4.jpg"/></div>`)
         break;
+        case "5X5_THUMBNAIL_LIPTON":
+        $("#projectTitle h3").text("LIPTON ICED TEA");
+        $("#projectClient p").text("Lipton North America");
+        $("#short").text("VISUAL LANGUAGE / SALES COLLATERAL / PRINT STRATEGY ");
+        $("#projectThumb")
+        .append(`<div class="thumbs"><img src="./images/projects/lipton/1.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/lipton/2.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/lipton/3.jpg"/></div>`)
+        break;
+        case "5X5_THUMBNAIL_ORBIT_BABY":
+        $("#projectTitle h3").text("FOOTMUFF ORBIT BABY");
+        $("#projectClient p").text("Ergobaby");
+        $("#short").text("VISUAL LANGUAGE / SALES COLLATERAL / PRINT STRATEGY ");
+        $("#projectThumb")
+        .append(`<div class="thumbs"><img src="./images/projects/orbit/1.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/orbit/2.jpg"/></div>`)
+        .append(`<div class="thumbs"><img src="./images/projects/orbit/3.jpg"/></div>`)
+        break;
+        case "5X5_THUMBNAIL_SOUR_PATCH":
+        $("#projectTitle h3").text("SOUR PATCH ZOMBIE KIDS");
+        $("#projectClient p").text("Mars Men");
+        $("#short").text("VISUAL LANGUAGE / SALES COLLATERAL / PRINT STRATEGY ");
+        $("#projectThumb")
+        .append(`<div class="thumbs"><img src="./images/projects/sourPatch/1.jpg"/></div>`)
+        break;
+        case "5X5_THUMBNAIL_WEETABIX":
+        $("#projectTitle h3").text("WEETABIX");
+        $("#projectClient p").text("Weetabix Limited");
+        $("#short").text("VISUAL LANGUAGE / SALES COLLATERAL / PRINT STRATEGY ");
+        $("#projectThumb")
+        .append(`<div class="thumbs"><img src="./images/projects/weetabix/1.jpg"/></div>`)
+        break;
     }
     // wait for images to load before finding height
     $(function() {
