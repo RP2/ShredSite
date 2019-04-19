@@ -582,7 +582,7 @@ function info(funkName){
         case "5X5_THUMBNAIL_ORBIT_BABY":
         $("#projectTitle h3").text("FOOTMUFF ORBIT BABY");
         $("#projectClient p").text("Ergobaby");
-        $("#short").text("VISUAL LANGUAGE / SALES COLLATERAL / PRINT STRATEGY ");
+        $("#short").text("VISUAL LANGUAGE / PACKAGING SYSTEM / BRAND ARCHITECTURE / ILLUSTRATION / PRODUCTION STRATEGY");
         $("#projectThumb")
         .append(`<div class="thumbs"><img src="./images/projects/orbit/1.jpg"/></div>`)
         .append(`<div class="thumbs"><img src="./images/projects/orbit/2.jpg"/></div>`)
@@ -591,14 +591,14 @@ function info(funkName){
         case "5X5_THUMBNAIL_SOUR_PATCH":
         $("#projectTitle h3").text("SOUR PATCH ZOMBIE KIDS");
         $("#projectClient p").text("Mars Men");
-        $("#short").text("VISUAL LANGUAGE / SALES COLLATERAL / PRINT STRATEGY ");
+        $("#short").text("VISUAL LANGUAGE / PACKAGING SYSTEM / BRAND ARCHITECTURE / ILLUSTRATION / PRODUCTION STRATEGY");
         $("#projectThumb")
         .append(`<div class="thumbs"><img src="./images/projects/sourPatch/1.jpg"/></div>`)
         break;
         case "5X5_THUMBNAIL_WEETABIX":
         $("#projectTitle h3").text("WEETABIX");
         $("#projectClient p").text("Weetabix Limited");
-        $("#short").text("VISUAL LANGUAGE / SALES COLLATERAL / PRINT STRATEGY ");
+        $("#short").text("VISUAL LANGUAGE / PACKAGING SYSTEM / BRAND ARCHITECTURE / ILLUSTRATION / PRODUCTION STRATEGY");
         $("#projectThumb")
         .append(`<div class="thumbs"><img src="./images/projects/weetabix/1.jpg"/></div>`)
         break;
