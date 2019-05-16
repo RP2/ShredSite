@@ -1,5 +1,5 @@
 $(window).on("load", function(){
-    let url = "https://www.shredsf.com/new-blog/?format=json";
+    let url = "https://shredsf.squarespace.com/new-blog?format=json";
       $.ajax({
         type:     "GET",
         url:      url,
