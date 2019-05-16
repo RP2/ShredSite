@@ -49,3 +49,13 @@ $(window).resize(function(){
         $("#mobileNav").removeClass("active");
     }
 })
+
+$(document).ready(function(){
+    $("#navPad a").css("color", "#012d5e")
+});
+
+$("#dropdown").hover(function(){
+    $(".dropBtn").fadeIn(200).css("display", "flex");
+}, function(){
+    $(".dropBtn").fadeOut(200);
+})
