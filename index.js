@@ -11,12 +11,14 @@ $("a").on('click', function(event) {
     }
   });
   $("#land1").on("click", function(e){
-    let video = $("#cran");
-      if(video[0].muted){
-          video[0].muted = false;
-      }
-      else{
-          video[0].muted = true;
+      if ($(window).width() > 800){
+        let video = $("#cran");
+        if(video[0].muted){
+            video[0].muted = false;
+        }
+        else{
+            video[0].muted = true;
+        }
       }
   });
   $("video").on("click", function(){
@@ -70,16 +72,18 @@ $(document).ready(function() {
 });
 
 $(window).scroll(function() {
-    let video = $("#cran");
-    if ($(window).scrollTop() > $("#land1").outerHeight()){
-        video[0].muted = true;
-        video[0].pause();
-        $("nav").css("z-index", 0)
-    } else {
-        $("nav").css("z-index", 1)
-        video[0].play();
+    if ($(window).width() > 800){
+        let video = $("#cran");
+        if ($(window).scrollTop() > $("#land1").outerHeight()){
+            video[0].muted = true;
+            video[0].pause();
+            $("nav").css("z-index", 0)
+        } else {
+            $("nav").css("z-index", 1)
+            video[0].play();
+        }
+        navColor();
     }
-    navColor();
 });
 function navColor(){
     if (Array.prototype.some.call($('.whiteBG'), function(element) {
