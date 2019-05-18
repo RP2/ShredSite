@@ -45,11 +45,12 @@ $(document).ready(function() {
         }
         $("#projectLeft img").attr("src", this.src)
         $("#loading").css("display", "flex")
+        $("html, body").stop().animate({scrollTop: $("#landingSlides").outerHeight() + 5 + "px"}, 1000, "swing");
         $("#work").stop().animate({marginTop: $("#loading").height() + "px"}, 250);
         info(this)
         $("#projectThumb img").click(function(){
             $("#projectLeft img").attr("src", this.src)
-            $("html, body").stop().animate({scrollTop: $("nav").height()-($(this).scrollTop() / 2) + "px"}, 500, "swing");
+            $("html, body").stop().animate({scrollTop: $("#landingSlides").outerHeight() + 5 + "px"}, 500, "swing");
             findHeight()
         });
     });
@@ -72,7 +73,6 @@ $(document).ready(function() {
 });
 
 $(window).scroll(function() {
-    if ($(window).width() > 800){
         let video = $("#cran");
         if ($(window).scrollTop() > $("#land1").outerHeight()){
             video[0].muted = true;
@@ -80,10 +80,11 @@ $(window).scroll(function() {
             $("nav").css("z-index", 0)
         } else {
             $("nav").css("z-index", 1)
+            if ($(window).width() > 800){
             video[0].play();
+            };
         }
         navColor();
-    }
 });
 function navColor(){
     if (Array.prototype.some.call($('.whiteBG'), function(element) {
@@ -648,8 +649,6 @@ function setHeight(projectHeight){
 
 //animations
 function animate(){
-    $("html, body").stop().animate({
-        scrollTop: $("#landingSlides").outerHeight() + 5 + "px"}, 1000, "swing");
     $("#project").stop().css("position", "absolute").fadeIn(1000).css("display", "flex");
     $("#loading").css("display", "none")
     $("#mobileNav").stop().fadeOut();
