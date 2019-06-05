@@ -284,7 +284,7 @@ modal{
 }
 
 #loading{
-    width: 100vw;
+    width: 100%;
     display: none;
     justify-content: center;
     position: absolute;
